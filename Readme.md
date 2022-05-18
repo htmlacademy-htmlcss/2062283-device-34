@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Владислав Гришин](https://up.htmlacademy.ru/htmlcss/34/user/2062283).
-* Наставник: [Коля Калганов](https://htmlacademy.ru/profile/id794007).
+* Наставник: [Коля Колганов](https://htmlacademy.ru/profile/id794007).
 
 ---
 
