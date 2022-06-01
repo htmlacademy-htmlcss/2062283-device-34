@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <title>HTML Academy: Девайс</title>
-    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/styles.css" />
   </head>
   <body>
     <header class="main-header">
@@ -134,6 +134,7 @@
                 height="54.99"
                 alt="Виртуальная реальность"
             /></a>
+            <a href="#">Виртуальная реальность</a>
           </li>
           <li class="product-item">
             <a href="#"
@@ -143,6 +144,7 @@
                 height="117"
                 alt="Моноподы для селфи"
             /></a>
+            <a href="#">Моноподы для селфи</a>
           </li>
           <li class="product-item">
             <a href="#"
@@ -152,6 +154,7 @@
                 height="87"
                 alt="Экшн-камеры"
             /></a>
+            <a href="#">Экшн-камеры</a>
           </li>
           <li class="product-item">
             <a href="#"
@@ -161,6 +164,7 @@
                 height="64.99"
                 alt="Фитнес-браслеты"
             /></a>
+            <a href="#">Фитнес-браслеты</a>
           </li>
           <li class="product-item">
             <a href="#"
@@ -170,6 +174,7 @@
                 height="97.98"
                 alt="Умные часы"
             /></a>
+            <a href="#">Умные часы</a>
           </li>
           <li class="product-item">
             <a href="#"
@@ -179,6 +184,7 @@
                 height="69.01"
                 alt="Квадрокоптеры"
             /></a>
+            <a href="#">Квадрокоптеры</a>
           </li>
         </ul>
       </section>
@@ -195,6 +201,8 @@
             <a class="button button-contacts" href="#">Кредит</a>
           </li>
         </ul>
+      </section>
+      <section class="delivery">
         <h2 class="delivery-title" id="delivery">Доставка</h2>
         <div class="delivery-description">
           Мы с удовольствием доставим ваш товар прямо<br />
@@ -205,10 +213,12 @@
             src="images/delivery-man-image.png"
             width="136"
             height="164"
-            alt="Изоюражение доставщика"
+            alt="Изображение доставщика"
           />
         </div>
-        <span class="delivery-notice">Доставим редкий товар под заказ</span>
+        <div class="delivery-notice">Доставим редкий товар под заказ</div>
+      </section>
+      <section class="about">
         <h2 class="about-title">О нас</h2>
         <p class="about-description">
           Огромный выбор гаджетов не оставит равнодушным<br />
@@ -220,23 +230,23 @@
         </p>
         <ul class="about-delivery-description-list">
           <li class="about-delivery-description-item"><b>Меловые линии</b></li>
-          <li class="about-delivery-description-item"><b>Сдик</b></li>
+          <li class="about-delivery-description-item"><b>СДИК</b></li>
           <li class="about-delivery-description-item"><b>ТоксБерри</b></li>
         </ul>
         <a href="#">Подробнее о нас</a>
       </section>
       <section class="contacts">
-        <b class="contacts-title" id="contacts">Контакты</b>
+        <h2 class="contacts-title" id="contacts">Контакты</h2>
         <p class="contacts-description">
           Вы можете забрать товар сами, заехав в наш офис.<br />
           Заодно сможете проверить работоспособность покупки.
         </p>
-        <h3 class="contacts-subtitle">Интернет-магазин «Девайс»</h3>
+        <b class="contacts-subtitle">Интернет-магазин «Девайс»</b>
         <address class="contacts-address">
           Санкт-Петербург, набережная реки Карповки, 5, литера П.
         </address>
         <a class="contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-        <h3 class="contacts-subtitle">Время работы</h3>
+        <b class="contacts-subtitle">Время работы</b>
         <ul class="contacts-schedule">
           <li class="schedule-item">пн—пт: с 10:00 до 22:00</li>
           <li class="schedule-item">сб—вс: с 10:00 до 19:00</li>
@@ -258,7 +268,7 @@
           <input type="email" name="email" placeholder="Ваш e-mail" required />
           <button class="button">Подписаться</button>
         </form>
-        <strong class="warning">Это бесплатно</strong>
+        <span class="warning">Это бесплатно</span>
         <img
           class="delivery-car-logo"
           src="images/delivery-car-image.svg"
@@ -271,6 +281,7 @@
     <footer class="page-footer">
       <section class="footer-address">
         <h3 class="visually-hidden">Адрес</h3>
+        <a href="index.html">
         <img
           class="site-logo"
           src="images/logo-footer.svg"
@@ -278,6 +289,7 @@
           height="31.1"
           alt="Логотип сайта"
         />
+      </a>
         <address class="contacts-address">
           <p class="contacts-address-text">
             Санкт-Петербург, набережная реки Карповки, 5, литера П.
@@ -336,14 +348,15 @@
       <section class="footer-phone-number">
         <h3 class="visually-hidden">Номер телефона</h3>
         <a class="contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-        <a href="https://htmlacademy.ru/"></a>
-        <img
-          class="academy-logo"
-          src="images/html-logo.svg"
-          width="114.9"
-          height="32.9"
-          alt="Логотип академии"
-        />
+        <a href="https://htmlacademy.ru/">
+          <img
+            class="academy-logo"
+            src="images/html-logo.svg"
+            width="114.9"
+            height="32.9"
+            alt="Логотип академии"
+          />
+        </a>
       </section>
     </footer>
   </body>
