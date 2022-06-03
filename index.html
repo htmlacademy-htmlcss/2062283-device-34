@@ -8,10 +8,10 @@
   <body>
     <header class="main-header">
       <h1 class="visually-hidden">Девайс</h1>
-      <a class="logo" href="#">
+      <a class="logo" href="index.html">
         <img
           class="page-header-logo"
-          src="images/logo-image.svg"
+          src="images/logo.svg"
           width="145"
           height="36"
           alt="Логотип магазина"
@@ -44,7 +44,6 @@
           </li>
           <li>
             <a class="navigation-link" href="#">Корзина</a>
-            <span class="bin-icon-counter">Иконка корзины</span>
           </li>
         </ul>
         <ul class="navigation-list navigation-main">
@@ -73,7 +72,7 @@
         <h2 class="visually-hidden">Изображения Квадрокоптеров</h2>
         <img
           class="slider-image"
-          src="images/copter-image.png"
+          src="images/copter.png"
           width="560"
           height="560"
           alt="Квадрокоптеры"
@@ -106,7 +105,7 @@
             </button>
           </li>
         </ul>
-        <a class="button button-more" href="#">Подробнее</a>
+        <a class="button-more">Подробнее</a>
         <ul class="spec-list">
           <li class="spec-item">
             <b class="spec-range">800 м</b>
@@ -122,67 +121,73 @@
         <h3 class="visually-hidden">Категории товаров</h3>
         <ul class="products-list">
           <li class="product-item">
-            <a href="#"
-              ><img
-                src="images/vr-image.svg"
-                width="96.95"
-                height="54.99"
-                alt="Виртуальная реальность"
+            <a href="#">
+              <img
+                class="vr-image"
+                src="/images/vr.png"
+                width="160"
+                height="160"
+                alt="Изображение очков vr"
               />
               <span>Виртуальная реальность</span>
             </a>
           </li>
           <li class="product-item">
-            <a href="#"
-              ><img
-                src="images/selfie-stick-image.svg"
-                width="85.87"
-                height="117"
-                alt="Моноподы для селфи"
+            <a href="catalog.html">
+              <img
+                class="selfie-image"
+                src="/images/selfie.png"
+                width="160"
+                height="160"
+                alt="Изображение монопода для селфи"
               />
               <span>Моноподы для селфи</span>
             </a>
           </li>
           <li class="product-item">
-            <a href="#"
-              ><img
-                src="images/action-camera-image.svg"
-                width="71.02"
-                height="87"
-                alt="Экшн-камеры"
+            <a href="#">
+              <img
+                class="cam-image"
+                src="/images/action-cam.png"
+                width="160"
+                height="160"
+                alt="Изображение экшн-камеры'"
               />
               <span>Экшн-камеры</span>
             </a>
           </li>
           <li class="product-item">
-            <a href="#"
-              ><img
-                src="images/fit-bracelet-image.svg"
-                width="107.31"
-                height="64.99"
-                alt="Фитнес-браслеты"
+            <a href="#">
+              <img
+                class="fit-image"
+                src="/images/fit-bracelet.png"
+                width="160"
+                height="160"
+                alt="Изображение фитнес-браслета'"
               />
               <span>Фитнес-браслеты</span>
             </a>
           </li>
           <li class="product-item">
-            <a href="#"
-              ><img
-                src="images/smart-watch-image.svg"
-                width="56.01"
-                height="97.98"
-                alt="Умные часы"
+            <a href="#">
+              <img
+                class="watch-image"
+                src="/images/fit-bracelet.png"
+                width="160"
+                height="160"
+                alt="Изображение умных часов'"
               />
               <span>Умные часы</span>
             </a>
           </li>
           <li class="product-item">
-            <a href="#"
-              ><img
-                src="images/copter-small.svg"
-                width="132.03"
-                height="69.01"
-                alt="Квадрокоптеры"
+            <a href="#">
+              <img
+                class="cam-image"
+                src="/images/copter-small.png"
+                width="160"
+                height="160"
+                alt="Изображение квадрокоптера"
               />
               <span>Квадрокоптеры</span>
             </a>
@@ -210,13 +215,6 @@
           к вашему подъезду совершенно бесплатно! Ведь <br />
           мы неплохо заработаем, поднимая его на ваш этаж.
         </p>
-        <img
-          class="delivery-man-image"
-          src="images/delivery-man-image.png"
-          width="136"
-          height="164"
-          alt="Изображение доставщика"
-        />
       </section>
       <div class="delivery-notice">Доставим редкий товар под заказ</div>
       <section class="about">
@@ -234,7 +232,7 @@
           <li class="about-delivery-description-item"><b>СДИК</b></li>
           <li class="about-delivery-description-item"><b>ТоксБерри</b></li>
         </ul>
-        <a href="#">Подробнее о нас</a>
+        <a class="more-about">Подробнее о нас</a>
       </section>
       <section class="contacts">
         <h2 class="contacts-title" id="contacts">Контакты</h2>
@@ -252,10 +250,10 @@
           <li class="schedule-item">пн—пт: с 10:00 до 22:00</li>
           <li class="schedule-item">сб—вс: с 10:00 до 19:00</li>
         </ul>
-        <a href="#">Напишите нам</a>
+        <a class="contact-us">Напишите нам</a>
       </section>
       <section class="newsletter">
-        <h3 class="newsletter-title">Подпишитесь на рассылку</h3>
+        <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
         <p class="newsletter-description">
           Еженедельный дайджест с обзорами новинок,<br />
           длительными тест-драйвами, распаковками, а также акции,<br />
@@ -267,16 +265,9 @@
           method="post"
         >
           <input type="email" name="email" placeholder="Ваш e-mail" required />
-          <button class="button">Подписаться</button>
+          <button class="subscribe-button">Подписаться</button>
         </form>
         <span class="warning">Это бесплатно</span>
-        <img
-          class="delivery-car-logo"
-          src="images/delivery-car-image.svg"
-          width="47"
-          height="31.1"
-          alt="Изображение автомобиля доставки"
-        />
       </section>
     </main>
     <footer class="page-footer">
@@ -287,7 +278,7 @@
             class="site-logo"
             src="images/logo-footer.svg"
             width="147"
-            height="31.1"
+            height="31"
             alt="Логотип сайта"
           />
         </a>
@@ -299,7 +290,7 @@
       </section>
       <section class="footer-services">
         <h3 class="visually-hidden">Услуги</h3>
-        <ul class="services-list">
+        <ul class="footer-services-list">
           <li class="services-item">Доставка</li>
           <li class="services-item">Гарантия</li>
           <li class="services-item">Контакты</li>
@@ -312,9 +303,9 @@
             <a class="button" href="t.me/htmlacademy">
               <img
                 class="social-logo"
-                src="images/telegram-icon.svg"
-                width="13.34"
-                height="11.19"
+                src="images/telegram.svg"
+                width="14"
+                height="12"
                 alt="иконка телеграм"
               />
               <span class="visually-hidden">Телеграм</span></a
@@ -324,9 +315,9 @@
             <a class="button" href="https://www.youtube.com/user/htmlacademyru">
               <img
                 class="social-logo"
-                src="images/youtube-icon.svg"
+                src="images/youtube.svg"
                 width="16"
-                height="10.67"
+                height="11"
                 alt="иконка youtube"
               />
               <span class="visually-hidden">YouTube</span></a
@@ -336,9 +327,9 @@
             <a class="button" href="https://twitter.com/htmlacademy_ru">
               <img
                 class="social-logo"
-                src="images/twitter-icon.svg"
+                src="images/twitter.svg"
                 width="15"
-                height="14.06"
+                height="14"
                 alt="иконка twitter"
               />
               <span class="visually-hidden">Twitter</span></a
@@ -352,9 +343,9 @@
         <a href="https://htmlacademy.ru/">
           <img
             class="academy-logo"
-            src="images/html-logo.svg"
-            width="114.9"
-            height="32.9"
+            src="images/html.svg"
+            width="115"
+            height="33"
             alt="Логотип академии"
           />
         </a>
