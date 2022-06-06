@@ -84,7 +84,7 @@ li.navigation-item {
 
 .delivery {
     background-color: #ebebeb;
-    background-image: url("/images/delivery-man.png");
+    background-image: url("images/delivery-man.png");
     background-repeat: no-repeat;
     background-position: right;
     background-size: 136px 164px;
@@ -92,7 +92,7 @@ li.navigation-item {
 
 .delivery-notice {
     background-color: #ebebeb;
-    background-image: url("/images/delivery.png");
+    background-image: url("images/delivery.png");
     background-repeat: no-repeat;
     background-position: left;
     background-size: 125px 100px;
