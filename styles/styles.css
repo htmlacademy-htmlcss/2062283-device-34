@@ -28,7 +28,6 @@ body {
     font-size: 18px;
     line-height: 30px;
     color: #242424;
-    background-color: #ffffff;
 }
 
 .search-field,
@@ -95,8 +94,7 @@ li.navigation-item {
     background-image: url("../images/delivery.png");
     background-repeat: no-repeat;
     background-position: left;
-    background-size: 125px 100px;
-    height: 100px;
+    background-size: 125px 100px;   
     text-align: center;
 }
 
@@ -123,24 +121,24 @@ li.navigation-item {
 
 .page-footer,
 .footer-services li {
-    color: #FFFFFF;
+    color: #ffffff;
     background-color: #444444;
 }
 
 .contacts-phone {
     font-family: 'Rubik';
-    color: #FFFFFF;
+    color: #ffffff;;
     font-size: 16px;
     line-height: 20px;
     text-decoration-line: underline;
 }
 
 .catalog-products {
-    background-color: #F0F0F0;
+    background-color: #f0f0f0;
 }
 
 .product-list {
-    background-color: #FFFFFF;
+    background-color: #ffffff;
 }
 
 .breadcrumbs,
@@ -171,10 +169,10 @@ li.navigation-item {
     font-family: 'Rubik';
     font-size: 16px;
     line-height: 20px;
-    color: #FFFFFF;
+    color: #ffffff
 
 }
 .services-item-link {
     text-decoration: none;
-    color: #F0F0F0;
+    color: #f0f0f0;
 }
