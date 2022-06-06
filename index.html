@@ -33,36 +33,36 @@
                 id="search-field"
                 placeholder="Текст поиска"
               />
-              <button class="search-button">Найти</button>
+              <button class="button search-button">Найти</button>
             </form>
           </li>
           <li class="navigation-item">
-            <a class="navigation-button" href="#">Войти</a>
+            <a class="button navigation-button" href="#">Войти</a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#">Сравнить</a>
           </li>
-          <li>
+          <li class="navigation-item">
             <a class="navigation-link" href="#">Корзина</a>
           </li>
         </ul>
         <ul class="navigation-list navigation-main">
           <li class="navigation-item">
-            <a href="catalog.html">Каталог товаров</a>
+            <a class="navigation-link" href="catalog.html">Каталог товаров</a>
           </li>
           <li>
-            <a class="button" href="catalog.html">
+            <a class="button catalog-button" href="catalog.html">
               <span class="visually-hidden">Кнопка раскрытия каталога</span>
             </a>
           </li>
           <li>
-            <a class="button" href="#delivery">Доставка</a>
+            <a class="navigation-link" href="#delivery">Доставка</a>
           </li>
           <li>
-            <a href="#">Гарантия</a>
+            <a class="button navigation-button" href="#">Гарантия</a>
           </li>
           <li>
-            <a class="button" href="#contacts">Контакты</a>
+            <a class="navigation-link" href="#contacts">Контакты</a>
           </li>
         </ul>
       </nav>
@@ -105,7 +105,7 @@
             </button>
           </li>
         </ul>
-        <a class="button-more">Подробнее</a>
+        <a class="button button-more" href="#">Подробнее</a>
         <ul class="spec-list">
           <li class="spec-item">
             <b class="spec-range">800 м</b>
@@ -121,7 +121,7 @@
         <h3 class="visually-hidden">Категории товаров</h3>
         <ul class="products-list">
           <li class="product-item">
-            <a href="#">
+            <a class="product-link" href="#">
               <img
                 class="vr-image"
                 src="/images/vr.png"
@@ -133,7 +133,7 @@
             </a>
           </li>
           <li class="product-item">
-            <a href="catalog.html">
+            <a class="product-link" href="catalog.html">
               <img
                 class="selfie-image"
                 src="/images/selfie.png"
@@ -145,7 +145,7 @@
             </a>
           </li>
           <li class="product-item">
-            <a href="#">
+            <a class="product-link" href="#">
               <img
                 class="cam-image"
                 src="/images/action-cam.png"
@@ -157,7 +157,7 @@
             </a>
           </li>
           <li class="product-item">
-            <a href="#">
+            <a class="product-link" href="#">
               <img
                 class="fit-image"
                 src="/images/fit-bracelet.png"
@@ -169,7 +169,7 @@
             </a>
           </li>
           <li class="product-item">
-            <a href="#">
+            <a class="product-link" href="#">
               <img
                 class="watch-image"
                 src="/images/fit-bracelet.png"
@@ -181,7 +181,7 @@
             </a>
           </li>
           <li class="product-item">
-            <a href="#">
+            <a class="product-link" href="#">
               <img
                 class="cam-image"
                 src="/images/copter-small.png"
@@ -264,8 +264,14 @@
           action="https://echo.htmlacademy.ru/"
           method="post"
         >
-          <input type="email" name="email" placeholder="Ваш e-mail" required />
-          <button class="subscribe-button">Подписаться</button>
+          <input
+            class="subscribe-field"
+            type="email"
+            name="email"
+            placeholder="Ваш e-mail"
+            required
+          />
+          <button class="button subscribe-button">Подписаться</button>
         </form>
         <span class="warning">Это бесплатно</span>
       </section>
@@ -291,16 +297,22 @@
       <section class="footer-services">
         <h3 class="visually-hidden">Услуги</h3>
         <ul class="footer-services-list">
-          <li class="services-item">Доставка</li>
-          <li class="services-item">Гарантия</li>
-          <li class="services-item">Контакты</li>
+          <li>
+            <a class="services-item-link" href="#">Доставка</a>
+          </li>
+          <li>
+            <a class="services-item-link" href="#">Гарантия</a>
+          </li>
+          <li>
+            <a class="services-item-link" href="#">Контакты</a>
+          </li>
         </ul>
       </section>
       <section class="footer-social">
         <h3 class="visually-hidden">Мы в соцсетях</h3>
         <ul class="footer-social-list">
           <li class="footer-social-item">
-            <a class="button" href="t.me/htmlacademy">
+            <a class="button button-social" href="t.me/htmlacademy">
               <img
                 class="social-logo"
                 src="images/telegram.svg"
@@ -312,7 +324,10 @@
             >
           </li>
           <li class="footer-social-item">
-            <a class="button" href="https://www.youtube.com/user/htmlacademyru">
+            <a
+              class="button button-social"
+              href="https://www.youtube.com/user/htmlacademyru"
+            >
               <img
                 class="social-logo"
                 src="images/youtube.svg"
@@ -324,7 +339,10 @@
             >
           </li>
           <li class="footer-social-item">
-            <a class="button" href="https://twitter.com/htmlacademy_ru">
+            <a
+              class="button button-social"
+              href="https://twitter.com/htmlacademy_ru"
+            >
               <img
                 class="social-logo"
                 src="images/twitter.svg"
