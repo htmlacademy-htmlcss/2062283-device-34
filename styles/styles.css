@@ -27,7 +27,7 @@ body {
     font-family: "Rubik", sans-serif;
     font-size: 18px;
     line-height: 30px;
-    color: #242424;
+    
 }
 
 .search-field,
@@ -120,7 +120,7 @@ li.navigation-item {
     line-height: 21px;
     letter-spacing: 0.2em;
     text-transform: uppercase;
-    color: #000000;
+    
 }
 
 .page-footer,
