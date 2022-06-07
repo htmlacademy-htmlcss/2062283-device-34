@@ -19,7 +19,7 @@
       </a>
       <nav class="navigation">
         <h2 class="visually-hidden">Пользовательская навигация</h2>
-        <ul class="navigation-list">
+        <ul class="navigation-user">
           <li class="navigation-item">
             <form
               class="search-form"
@@ -33,45 +33,36 @@
                 id="search-field"
                 placeholder="Текст поиска"
               />
-              <input
-                class="search-button"
-                type="submit"
-                name="submit"
-                value="Найти"
-              />
+              <button class="button search-button">Найти</button>
             </form>
           </li>
           <li class="navigation-item">
-            <a class="navigation-button" href="#">Коля Петухов</a>
+            <a class="button navigation-button" href="#">Войти</a>
           </li>
-          <li class="navigation-item">
-            <a class="navigation-button" href="#">Выйти</a>
-          </li>
-
           <li class="navigation-item">
             <a class="navigation-link" href="#">Сравнить</a>
           </li>
-          <li>
+          <li class="navigation-item">
             <a class="navigation-link" href="#">Корзина</a>
           </li>
         </ul>
-        <ul class="navigation-list navigation-main">
+        <ul class="navigation-main">
           <li class="navigation-item">
-            <a class="navigation-link" href="#">Каталог товаров</a>
+            <a class="navigation-link" href="catalog.html">Каталог товаров</a>
           </li>
           <li>
-            <a class="navigation-button" href="catalog.html">
+            <a class="button catalog-button" href="catalog.html">
               <span class="visually-hidden">Кнопка раскрытия каталога</span>
             </a>
           </li>
           <li>
-            <a class="button" href="#delivery">Доставка</a>
+            <a class="navigation-link" href="#delivery">Доставка</a>
           </li>
           <li>
-            <a href="#">Гарантия</a>
+            <a class="button navigation-button" href="#">Гарантия</a>
           </li>
           <li>
-            <a class="button" href="#contacts">Контакты</a>
+            <a class="navigation-link" href="#contacts">Контакты</a>
           </li>
         </ul>
       </nav>
@@ -101,7 +92,7 @@
         >
           <h3 class="filter-title">Фильтр</h3>
           <fieldset class="catalog-filter-group">
-            <legend class="catalog-filter-title">Цена</legend>
+            <legend class="catalog-filter-title">Стоимость</legend>
             <input
               class="control-input"
               type="range"
@@ -256,7 +247,7 @@
           </li>
         </ul>
         <button class="button pagination-show-more" type="button">
-          Показать еще
+          Загрузить еще
         </button>
         <ul class="pagination">
           <li class="pagination-item">
