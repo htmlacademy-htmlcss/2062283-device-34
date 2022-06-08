@@ -22,32 +22,65 @@
     font-display: swap;
 }
 
+html {
+    height: 100%;
+}
+
 body {
     margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
     font-family: "Rubik", sans-serif;
     font-size: 18px;
     line-height: 30px;
-    
 }
 
-.search-field,
-.subscribe-field {
+.header-container {
+    display: flex;
+    background-color: #ffe17f;
+    justify-content: center;
+    width: 1160px;
+
+}
+
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.search-field {
     font-family: inherit;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.subscribe-field {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: #444444;
+    opacity: 0.5;
 }
 
 .search-button {
     font-family: inherit;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
 }
 
-.main-header {
-    background-color: #ffe17f;
-    margin: 40px 140px 0 140px
-}
-
-li.navigation-item {
-    display: flex;
-    flex-direction: row;
-}
 
 .navigation-user {
     font-family: "Rubik", sans-serif;
@@ -116,11 +149,12 @@ li.navigation-item {
 .services-list,
 .subscribe-button {
     font-family: "Raleway";
+    font-weight: 800;
     font-size: 18px;
     line-height: 21px;
     letter-spacing: 0.2em;
     text-transform: uppercase;
-    
+
 }
 
 .page-footer,
@@ -131,8 +165,15 @@ li.navigation-item {
 
 .contacts-phone {
     font-family: 'Rubik';
+    color: #000000;
+    font-size: 18px;
+    line-height: 30px;
+    text-decoration-line: underline;
+}
+
+.contacts-phone-footer {
+    font-family: 'Rubik';
     color: #ffffff;
-    ;
     font-size: 16px;
     line-height: 20px;
     text-decoration-line: underline;
@@ -170,11 +211,18 @@ li.navigation-item {
     text-transform: uppercase;
 }
 
-.contacts-address {
+.contacts-main {
+    font-family: 'Rubik';
+    font-size: 18px;
+    line-height: 30px;
+    color: #000000;
+}
+
+.contacts-footer {
     font-family: 'Rubik';
     font-size: 16px;
     line-height: 20px;
-    color: #ffffff
+    color: #ffffff;
 }
 
 .services-item-link {
@@ -223,4 +271,112 @@ li.navigation-item {
     font-size: 18px;
     line-height: 21px;
     text-align: right;
+}
+
+h2 {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 50px;
+}
+
+.spec-list b {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 30px;
+}
+
+.spec-list {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+}
+
+li.product-item {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+}
+
+.pagination-item {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #444444;
+    opacity: 0.3;
+}
+
+.contacts-phone {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-decoration-line: underline;
+}
+
+.footer-services-list {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+
+.button-more,
+.button-delivery,
+.button-warranty,
+.button-credit,
+.more-about,
+.contact-us {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000000;
+}
+
+.about-delivery-description-item {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: -0.02em;
+}
+
+.contacts-subtitle {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.pagination-text {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
 }
