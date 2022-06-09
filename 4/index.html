@@ -3,11 +3,13 @@
   <head>
     <meta charset="utf-8" />
     <title>HTML Academy: Девайс</title>
-    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/styles.css"/>
+    <link rel="stylesheet" href="styles/outlines.css"/>
     <base href="https://htmlacademy-htmlcss.github.io/2062283-device-34/4/">
 </head>
   <body>
-    <header class="header-container main-header">
+    <header class="main-header">
+      <div class="header-container">
       <h1 class="visually-hidden">Девайс.</h1>
       <a class="logo" href="index.html">
         <img
@@ -50,9 +52,7 @@
         <ul class="navigation-main">
           <li class="navigation-item">
             <a class="navigation-link" href="catalog.html">Каталог товаров</a>
-          </li>
-          <li>
-            <a class="button catalog-button" href="catalog.html">
+            <button class="button catalog-button" href="catalog.html">
               <span class="visually-hidden">Кнопка раскрытия каталога.</span>
             </a>
           </li>
@@ -67,6 +67,7 @@
           </li>
         </ul>
       </nav>
+    </div>
     </header>
     <main class="main-container main-index">
       <section class="sliders">
@@ -242,7 +243,7 @@
           Заодно сможете проверить работоспособность покупки.
         </p>
         <b class="contacts-subtitle">Интернет-магазин «Девайс»</b>
-        <address class="contacts-address">
+        <address class="contacts-main">
           Санкт-Петербург, набережная реки Карповки, 5, литера П.
         </address>
         <a class="contacts-phone" href="tel:+78128121212">Тел.:+7 (812) 812-12-12</a>
