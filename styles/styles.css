@@ -107,7 +107,6 @@ body {
     width: 100%;
 
 }
-
 .services-list {
     display: flex;
     flex-direction: column;
@@ -115,7 +114,6 @@ body {
     padding: 0px;
     gap: 35px;
 }
-
 .services-description-wrapper {
     display: flex;
     flex-direction: column;
@@ -128,12 +126,14 @@ body {
     justify-content: flex-start;
 }
 
+
 .about-container {
     display: flex;
     max-width: 1160px;
     width: 100%;
     margin: 0 auto;
     justify-content: center;
+    margin-top: 70px;
 }
 .about-wrapper {
     display: flex;
@@ -269,10 +269,16 @@ body {
     line-height: 23px;
     letter-spacing: 0.2em;
     text-transform: uppercase;
+    margin-top: 70px;
 }
 
 .newsletter {
     background-color: #ebebeb;
+}
+.newsletter-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-top: 70px;
 }
 
 .footer-address {
