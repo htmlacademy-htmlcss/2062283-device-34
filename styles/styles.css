@@ -30,48 +30,43 @@ body {
     font-family: "Rubik", sans-serif;
     font-size: 18px;
     line-height: 30px;
+    margin: 0;
+    padding: 0;
 
 }
-
+.container {
+    max-width: 1160px;
+    width: 100%;
+    margin: 0 auto;
+}
 .header-wrapper {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    max-width: 1160px;
-    width: 100%;
     background-color: #ffe17f;
-    margin: 0 auto;
+    
 }
 
 .nav-wrapper-user {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin: 0 auto;
-    max-width: 1160px;
-    width: 100%;
+
 }
 
 .navigation-main-container {
     display: flex;
-    flex-direction: row;
     justify-content: space-around;
-    max-width: 1160px;
-    width: 100%;
 }
 
 .best-product-container {
     display: flex;
-    flex-direction: row;
-    margin: 0 auto;
     justify-content: center;
-    max-width: 1160px;
-    width: 100%;
+    padding-bottom: 38px;
 }
 
 .slider-container {
     display: flex;
-    flex-direction: row;
 }
 
 .advantage-container {
@@ -92,6 +87,7 @@ body {
     max-width: 1160px;
     width: 100%;
     margin: 0 auto;
+    margin-top: 70px;
 }
 
 .services {
@@ -101,15 +97,23 @@ body {
 .services-main-container {
     display: flex;
     flex-direction: row;
-    max-width: 1160px;
-    width: 100%;
-    margin: 0 auto;
+    margin-top: 70px;
     justify-content: center;
 }
 
 .services-list-wrapper {
     display: flex;
-    margin: 100px 100px 100px 100px;
+    max-width: 1160px;
+    width: 100%;
+
+}
+
+.services-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 35px;
 }
 
 .services-description-wrapper {
@@ -130,9 +134,23 @@ body {
     width: 100%;
     margin: 0 auto;
     justify-content: center;
-
 }
-
+.about-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-right: 131px;
+    max-width: 1160px;
+    width: 100%;
+}
+.contacts-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-right: 108px;
+    max-width: 1160px;
+    width: 100%;
+}
 .footer-menu-wrapper {
     display: flex;
     max-width: 1160px;
@@ -141,8 +159,19 @@ body {
     justify-content: space-around;
 }
 
-.footer-services-wrapper li {
-    display: inline;
+.footer-services-list {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-social-list {
+    display: flex;
+    justify-content: center;
+}
+
+.academy-logo {
+    display: flex;
+    justify-content: flex-end;
 }
 
 .visually-hidden {
