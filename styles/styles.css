@@ -27,23 +27,123 @@ html {
 }
 
 body {
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    min-height: 100%;
     font-family: "Rubik", sans-serif;
     font-size: 18px;
     line-height: 30px;
+
 }
 
-.header-container {
+.header-wrapper {
     display: flex;
-    background-color: #ffe17f;
+    flex-direction: column;
     justify-content: center;
-    width: 1160px;
+    max-width: 1160px;
+    width: 100%;
+    background-color: #ffe17f;
+    margin: 0 auto;
+}
+
+.nav-wrapper-user {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0 auto;
+    max-width: 1160px;
+    width: 100%;
+}
+
+.navigation-main-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    max-width: 1160px;
+    width: 100%;
+}
+
+.best-product-container {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    justify-content: center;
+    max-width: 1160px;
+    width: 100%;
+}
+
+.slider-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.advantage-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.pagination-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.products-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    max-width: 1160px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.services {
+    background-color: #f0f0f0;
+}
+
+.services-main-container {
+    display: flex;
+    flex-direction: row;
+    max-width: 1160px;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.services-list-wrapper {
+    display: flex;
+    margin: 100px 100px 100px 100px;
+}
+
+.services-description-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 448px;
+    margin-left: 116px;
+    background-image: url("../images/delivery-man.png");
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: top;
+    justify-content: flex-start;
+}
+
+.about-container {
+    display: flex;
+    max-width: 1160px;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: center;
 
 }
 
+.footer-menu-wrapper {
+    display: flex;
+    max-width: 1160px;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: space-around;
+}
+
+.footer-services-wrapper li {
+    display: inline;
+}
 
 .visually-hidden {
     position: absolute;
@@ -123,9 +223,6 @@ body {
 
 .delivery {
     background-color: #ebebeb;
-    background-image: url("../images/delivery-man.png");
-    background-repeat: no-repeat;
-    background-position: right;
     background-size: 136px 164px;
 }
 
@@ -164,6 +261,8 @@ body {
     line-height: 21px;
     letter-spacing: 0.2em;
     text-transform: uppercase;
+    margin: 0;
+    padding: 0;
 
 }
 
@@ -263,7 +362,6 @@ body {
 }
 
 .select-control {
-    font-family: inherit;
     font-family: 'Rubik';
     font-style: normal;
     font-weight: 400;
@@ -349,6 +447,8 @@ li.product-item {
     line-height: 21px;
     letter-spacing: 0.2em;
     text-transform: uppercase;
+    margin: 0;
+    padding: 0;
 }
 
 .button-more,
@@ -394,4 +494,9 @@ li.product-item {
     line-height: 21px;
     letter-spacing: 0.2em;
     text-transform: uppercase;
+}
+
+.products-list {
+    margin: 0;
+    padding: 0;
 }
