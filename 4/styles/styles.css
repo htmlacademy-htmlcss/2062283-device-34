@@ -87,6 +87,12 @@ body {
     font-size: 16px;
     line-height: 20px;
 
+    font-size: 18px;
+    line-height: 30px;
+    width: 1040px;
+    height: 40px;
+    margin: 0;
+    padding: 0;
 }
 
 .navigation-main {
@@ -133,6 +139,13 @@ body {
     background-position: left;
     background-size: 125px 100px;
     text-align: center;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
 }
 
 .newsletter {
@@ -254,6 +267,11 @@ body {
 
 .select-control {
     font-family: inherit;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
 }
 
 .catalog-filter-title {
