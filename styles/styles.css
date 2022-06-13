@@ -27,21 +27,145 @@ html {
 }
 
 body {
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    min-height: 100%;
     font-family: "Rubik", sans-serif;
     font-size: 18px;
     line-height: 30px;
+    margin: 0;
+    padding: 0;
+
 }
 
-.header-container {
-    display: flex;
-    background-color: #ffe17f;
-    justify-content: center;
-    width: 1160px;
+.container {
+    max-width: 1160px;
+    width: 100%;
+    margin: 0 auto;
+}
 
+.header-wrapper {
+    background-color: #ffe17f;
+
+}
+
+.nav-wrapper-user {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.navigation-main-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.best-product-container {
+    display: flex;
+    padding-bottom: 38px;
+}
+
+.slider-container {
+    display: flex;
+}
+
+.advantage-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.pagination-container {
+    display: flex;
+}
+
+.products-container {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 70px;
+}
+
+.services {
+    background-color: #f0f0f0;
+}
+
+.services-main-container {
+    display: flex;
+    margin-top: 70px;
+    justify-content: center;
+
+}
+
+.services-list-wrapper {
+    display: flex;
+
+}
+
+.services-description-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 448px;
+    margin-left: 116px;
+    background-image: url("../images/delivery-man.png");
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: top;
+    justify-content: flex-start;
+}
+
+.about-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+}
+
+.about-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-right: 108px;
+    max-width: 520px;
+    width: 100%;
+}
+
+.contacts-wrapper {
+    margin-right: 163px;
+    max-width: 532px;
+    width: 100%;
+}
+
+.footer-menu-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.contacts-footer {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 234px;
+    width: 100%;
+}
+
+.footer-services-list {
+    display: flex;
+    max-width: 444px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.footer-social-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.social-rectangle {
+    visibility: hidden;
+}
+.footer-social-list {
+    display: flex;
+    max-width: 150px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 
@@ -123,9 +247,6 @@ body {
 
 .delivery {
     background-color: #ebebeb;
-    background-image: url("../images/delivery-man.png");
-    background-repeat: no-repeat;
-    background-position: right;
     background-size: 136px 164px;
 }
 
@@ -143,10 +264,15 @@ body {
     line-height: 23px;
     letter-spacing: 0.2em;
     text-transform: uppercase;
+    margin-top: 70px;
 }
 
 .newsletter {
     background-color: #ebebeb;
+}
+
+.newsletter-wrapper {
+    margin-top: 70px;
 }
 
 .footer-address {
@@ -164,6 +290,8 @@ body {
     line-height: 21px;
     letter-spacing: 0.2em;
     text-transform: uppercase;
+    margin: 0;
+    padding: 0;
 
 }
 
@@ -263,7 +391,6 @@ body {
 }
 
 .select-control {
-    font-family: inherit;
     font-family: 'Rubik';
     font-style: normal;
     font-weight: 400;
@@ -349,6 +476,8 @@ li.product-item {
     line-height: 21px;
     letter-spacing: 0.2em;
     text-transform: uppercase;
+    margin: 0;
+    padding: 0;
 }
 
 .button-more,
@@ -394,4 +523,9 @@ li.product-item {
     line-height: 21px;
     letter-spacing: 0.2em;
     text-transform: uppercase;
+}
+
+.products-list {
+    margin: 0;
+    padding: 0;
 }

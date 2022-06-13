@@ -4,11 +4,10 @@
     <meta charset="utf-8" />
     <title>HTML Academy: Девайс</title>
     <link rel="stylesheet" href="styles/styles.css"/>
-    <link rel="stylesheet" href="styles/outlines.css"/>
   </head>
   <body>
-    <header class="main-header">
-      <div class="header-container">
+    <header class="main-header container">
+      <div class="header-wrapper">
       <h1 class="visually-hidden">Девайс.</h1>
       <a class="logo" href="index.html">
         <img
@@ -19,9 +18,10 @@
           alt="Логотип магазина"
         />
       </a>
-      <nav class="navigation-container navigation">
+      <nav class="navigation container">
         <h2 class="visually-hidden">Пользовательская навигация.</h2>
         <ul class="navigation-user">
+          <div class="nav-wrapper-user">
           <li class="navigation-item">
             <form
               class="search-form"
@@ -47,8 +47,10 @@
           <li class="navigation-item">
             <a class="navigation-link" href="#">Корзина</a>
           </li>
+        </div>
         </ul>
         <ul class="navigation-main">
+          <div class="navigation-main-container">
           <li class="navigation-item">
             <a class="navigation-link" href="catalog.html">Каталог товаров</a>
             <button class="button catalog-button" href="catalog.html">
@@ -64,12 +66,17 @@
           <li>
             <a class="navigation-link" href="#contacts">Контакты</a>
           </li>
+        </div>
         </ul>
       </nav>
     </div>
     </header>
-    <main class="main-container main-index">
-      <section class="sliders">
+    <main class="main-index">
+      <section class="best-product-container container">
+        <div class="slider-container">
+        <button class="slider-button slider-prev" type="button">
+          <span class="visually-hidden">Предыдущий товар.</span>
+        </button>
         <h2 class="visually-hidden">Изображения Квадрокоптеров.</h2>
         <img
           class="slider-image"
@@ -78,18 +85,18 @@
           height="560"
           alt="Квадрокоптеры"
         />
-        <button class="slider-button slider-prev" type="button">
-          <span class="visually-hidden">Предыдущий товар.</span>
-        </button>
         <button class="slider-button slider-next" type="button">
           <span class="visually-hidden">Следующий товар.</span>
         </button>
+      </div>
+      <div class="advantage-container">
         <h2 class="advantage-title">Порхает как бабочка, жалит, как пчела</h2>
         <p class="advantage-description">
           Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
           замаскированным под стандартную камеру.
         </p>
         <ul class="slider-pagination">
+          <div class="pagination-container">
           <li class="slider-pagination-item">
             <button class="slider-pagination-button-current" type="button">
               <span class="visually-hidden">1 описание.</span>
@@ -105,6 +112,7 @@
               <span class="visually-hidden">3 описание.</span>
             </button>
           </li>
+        </div>
         </ul>
         <a class="button button-more" href="#">Подробнее</a>
         <ul class="spec-list">
@@ -117,10 +125,12 @@
             <span class="radius-name">Радиус поражения</span>
           </li>
         </ul>
+      </div>
       </section>
-      <section class="products">
+      <section class="container">
         <h3 class="visually-hidden">Категории товаров.</h3>
         <ul class="products-list">
+          <div class="products-container">
           <li class="product-item">
             <a class="product-link" href="#">
               <img
@@ -196,7 +206,9 @@
         </ul>
       </section>
       <section class="services">
+        <div class="services-main-container container">
         <h2 class="visually-hidden">Услуги.</h2>
+        <div class="services-list-wrapper">
         <ul class="services-list">
           <li class="services-item">
             <a class="button button-delivery" href="#">Доставка</a>
@@ -208,17 +220,20 @@
             <a class="button button-credit" href="#">Кредит</a>
           </li>
         </ul>
-      </section>
-      <section class="delivery">
+        </div>
+        <div class="services-description-wrapper">
         <h2 class="title delivery-title" id="delivery">Доставка</h2>
         <p>
           Мы с удовольствием доставим ваш товар прямо<br />
           к вашему подъезду совершенно бесплатно! Ведь <br />
           мы неплохо заработаем, поднимая его на ваш этаж.
         </p>
+        </div>
+      </div>
       </section>
       <div class="delivery-notice">Доставим редкий товар под заказ</div>
-      <section class="about">
+      <section class="about-container container">
+        <div class="about-wrapper">
         <h2 class="title about-title">О нас</h2>
         <p class="about-description">
           Огромный выбор гаджетов не оставит равнодушным<br />
@@ -234,8 +249,8 @@
           <li class="about-delivery-description-item"><b>ТоксБерри</b></li>
         </ul>
         <a class="more-about" href="#">Подробнее о нас</a>
-      </section>
-      <section class="contacts">
+      </div>
+      <div class="contacts-wrapper">
         <h2 class="title contacts-title" id="contacts">Контакты</h2>
         <p class="contacts-description">
           Вы можете забрать товар сами, заехав в наш офис.<br />
@@ -252,8 +267,10 @@
           <li class="schedule-item">сб—вс: с 10:00 до 19:00</li>
         </ul>
         <a class="contact-us" href="#">Напишите нам</a>
+        </div>
       </section>
       <section class="newsletter">
+        <div class="newsletter-wrapper container">
         <h2 class="title newsletter-title">Подпишитесь на рассылку</h2>
         <p class="newsletter-description">
           Еженедельный дайджест с обзорами новинок,<br />
@@ -275,11 +292,12 @@
           <button class="button subscribe-button">Подписаться</button>
         </form>
         <span class="warning">Это бесплатно</span>
+      </div>
       </section>
     </main>
     <footer class="page-footer">
-      <section class="footer-address">
-        <h3 class="visually-hidden">Адрес.</h3>
+      <section class="footer-menu">
+        <h3 class="visually-hidden">Услуги и контакты</h3>
         <a href="index.html">
           <img
             class="site-logo"
@@ -289,13 +307,13 @@
             alt="Логотип сайта"
           />
         </a>
+        <div class="footer-menu-wrapper container">
+        <h3 class="visually-hidden">Адрес.</h3>
         <address class="contacts-footer">
           <p class="contacts-address-text">
             Санкт-Петербург, набережная реки Карповки, 5, литера П.
           </p>
         </address>
-      </section>
-      <section class="footer-services">
         <h3 class="visually-hidden">Услуги.</h3>
         <ul class="footer-services-list">
           <li>
@@ -308,9 +326,14 @@
             <a class="services-item-link" href="#">Контакты</a>
           </li>
         </ul>
+        <h3 class="visually-hidden">Номер телефона.</h3>
+        <a class="contacts-phone-footer" href="tel:+78128121212">Тел.:+7 (812) 812-12-12</a>
+      </div>
       </section>
       <section class="footer-social">
         <h3 class="visually-hidden">Мы в соцсетях</h3>
+        <div class="footer-social-wrapper container">
+          <span class="social-rectangle">Контентный прямоугольник></span>
         <ul class="footer-social-list">
           <li class="footer-social-item">
             <a class="button button-social" href="t.me/htmlacademy">
@@ -355,11 +378,7 @@
             >
           </li>
         </ul>
-      </section>
-      <section class="footer-phone-number">
-        <h3 class="visually-hidden">Номер телефона.</h3>
-        <a class="contacts-phone-footer" href="tel:+78128121212">Тел.:+7 (812) 812-12-12</a>
-        <a href="https://htmlacademy.ru/">
+        <a class="academy-logo" href="https://htmlacademy.ru/">
           <img
             class="academy-logo"
             src="images/html.svg"
@@ -368,6 +387,7 @@
             alt="Логотип академии."
           />
         </a>
+      </div>
       </section>
     </footer>
   </body>
