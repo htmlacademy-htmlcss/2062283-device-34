@@ -135,7 +135,13 @@ body {
 .footer-menu-wrapper {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+}
+.contacts-footer {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 234px;
+    width: 100%;
 }
 
 .footer-services-list {
@@ -145,15 +151,23 @@ body {
     justify-content: space-between;
 }
 
+.footer-social-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.social-rectangle {
+    visibility: hidden;
+}
 .footer-social-list {
     display: flex;
-    justify-content: center;
+    max-width: 150px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
-.academy-logo {
-    margin-left: 450px;
-    margin-bottom: 30px;
-}
 
 .visually-hidden {
     position: absolute;
