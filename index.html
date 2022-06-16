@@ -6,19 +6,20 @@
     <link rel="stylesheet" href="styles/styles.css"/>
   </head>
   <body>
-    <header class="main-header container">
+    <header class="container">
+      <div class="header-menu-container">
       <div class="header-wrapper">
       <h1 class="visually-hidden">Девайс.</h1>
-      <a class="logo" href="index.html">
-        <img
-          class="page-header-logo"
-          src="images/logo.svg"
-          width="145"
-          height="36"
-          alt="Логотип магазина"
-        />
-      </a>
-      <nav class="navigation container">
+      <nav class="navigation-container">
+        <a class="logo" href="index.html">
+          <img
+            class="page-header-logo"
+            src="images/logo.svg"
+            width="145"
+            height="36"
+            alt="Логотип магазина"
+          />
+        </a>
         <h2 class="visually-hidden">Пользовательская навигация.</h2>
         <ul class="navigation-user">
           <div class="nav-wrapper-user">
@@ -39,24 +40,27 @@
             </form>
           </li>
           <li class="navigation-item">
-            <a class="button navigation-button" href="#">Войти</a>
+            <a class="button login-button" href="#">Войти</a>
           </li>
+          <div class="compare-cart-wrapper">
           <li class="navigation-item">
             <a class="navigation-link" href="#">Сравнить</a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#">Корзина</a>
           </li>
+          </div>
         </div>
         </ul>
         <ul class="navigation-main">
-          <div class="navigation-main-container">
+          <div class="nav-main-wrapper">
           <li class="navigation-item">
-            <a class="navigation-link" href="catalog.html">Каталог товаров</a>
+            <a class="navigation-link" href="catalog.html">Каталог товаров
             <button class="button catalog-button" href="catalog.html">
               <span class="visually-hidden">Кнопка раскрытия каталога.</span>
             </a>
           </li>
+          <div class="menu-wrapper">
           <li>
             <a class="navigation-link" href="#delivery">Доставка</a>
           </li>
@@ -67,9 +71,11 @@
             <a class="navigation-link" href="#contacts">Контакты</a>
           </li>
         </div>
+        </div>
         </ul>
       </nav>
     </div>
+  </div>
     </header>
     <main class="main-index">
       <section class="best-product-container container">
@@ -95,8 +101,9 @@
           Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
           замаскированным под стандартную камеру.
         </p>
+        <div class="pagination-container">
         <ul class="slider-pagination">
-          <div class="pagination-container">
+          <div class="pagination-wrapper">
           <li class="slider-pagination-item">
             <button class="slider-pagination-button-current" type="button">
               <span class="visually-hidden">1 описание.</span>
@@ -115,22 +122,23 @@
         </div>
         </ul>
         <a class="button button-more" href="#">Подробнее</a>
+      </div>
         <ul class="spec-list">
-          <li class="spec-item">
-            <b class="spec-range">800 м</b>
+          <li class="spec-item-range">
+            <span class="spec-range">800 м</span>
             <span class="range-name">Дальность полета</span>
           </li>
-          <li class="spec-item">
-            <b class="spec-radius">50 м</b>
+          <li class="spec-item-radius">
+            <span class="spec-radius">50 м</span>
             <span class="radius-name">Радиус поражения</span>
           </li>
         </ul>
       </div>
       </section>
-      <section class="container">
+      <section class="products-categories">
         <h3 class="visually-hidden">Категории товаров.</h3>
+        <div class="products-wrapper container">
         <ul class="products-list">
-          <div class="products-container">
           <li class="product-item">
             <a class="product-link" href="#">
               <img
@@ -204,6 +212,7 @@
             </a>
           </li>
         </ul>
+        </div>
       </section>
       <section class="services">
         <div class="services-main-container container">
@@ -223,7 +232,7 @@
         </div>
         <div class="services-description-wrapper">
         <h2 class="title delivery-title" id="delivery">Доставка</h2>
-        <p>
+        <p class="description-content">
           Мы с удовольствием доставим ваш товар прямо<br />
           к вашему подъезду совершенно бесплатно! Ведь <br />
           мы неплохо заработаем, поднимая его на ваш этаж.
@@ -231,16 +240,16 @@
         </div>
       </div>
       </section>
-      <div class="delivery-notice">Доставим редкий товар под заказ</div>
+      <div class="delivery-notice container">Доставим редкий товар под заказ</div>
       <section class="about-container container">
         <div class="about-wrapper">
         <h2 class="title about-title">О нас</h2>
         <p class="about-description">
-          Огромный выбор гаджетов не оставит равнодушным<br />
+          Огромный выбор гаджетов не оставит равнодушным
           гика, который есть в каждом из нас.
         </p>
         <p class="about-delivery-description">
-          Мы можем доставить ваш товар в самые отдалённые<br />
+          Мы можем доставить ваш товар в самые отдалённые
           уголки России транспортными компаниями:
         </p>
         <ul class="about-delivery-description-list">
@@ -253,14 +262,14 @@
       <div class="contacts-wrapper">
         <h2 class="title contacts-title" id="contacts">Контакты</h2>
         <p class="contacts-description">
-          Вы можете забрать товар сами, заехав в наш офис.<br />
+          Вы можете забрать товар сами, заехав в наш офис.
           Заодно сможете проверить работоспособность покупки.
         </p>
         <b class="contacts-subtitle">Интернет-магазин «Девайс»</b>
         <address class="contacts-main">
           Санкт-Петербург, набережная реки Карповки, 5, литера П.
         </address>
-        <a class="contacts-phone" href="tel:+78128121212">Тел.:+7 (812) 812-12-12</a>
+        <a class="contacts-phone" href="tel:+78128121212">Тел.:+7 (812) 812-12-12</a><br>
         <b class="contacts-subtitle">Время работы</b>
         <ul class="contacts-schedule">
           <li class="schedule-item">пн—пт: с 10:00 до 22:00</li>
@@ -271,12 +280,15 @@
       </section>
       <section class="newsletter">
         <div class="newsletter-wrapper container">
+        <div class="newsletter-description-wrapper">
         <h2 class="title newsletter-title">Подпишитесь на рассылку</h2>
         <p class="newsletter-description">
           Еженедельный дайджест с обзорами новинок,<br />
           длительными тест-драйвами, распаковками, а также акции,<br />
           спецпредложения и вот это вот всё.
         </p>
+      </div>
+      <div class="subscribe-wrapper">
         <form
           class="newsletter-form"
           action="https://echo.htmlacademy.ru/"
@@ -292,6 +304,7 @@
           <button class="button subscribe-button">Подписаться</button>
         </form>
         <span class="warning">Это бесплатно</span>
+        </div>
       </div>
       </section>
     </main>
