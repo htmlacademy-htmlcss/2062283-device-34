@@ -6,92 +6,82 @@
     <link rel="stylesheet" href="styles/styles.css" />
   </head>
   <body>
-    <header class="container">
-      <div class="header-menu-container">
-        <div class="header-wrapper-catalog">
-          <h1 class="visually-hidden">Девайс.</h1>
-          <nav class="navigation-container">
-            <a class="logo" href="index.html">
-              <img
-                class="page-header-logo"
-                src="images/logo.svg"
-                width="145"
-                height="36"
-                alt="Логотип магазина"
-              />
-            </a>
-            <h2 class="visually-hidden">Пользовательская навигация.</h2>
-            <div class="nav-wrapper-user">
-              <ul class="navigation-user">
-                <li class="navigation-item">
-                  <form
-                    class="search-form"
-                    action="https://echo.htmlacademy.ru/"
-                    method="get"
-                  >
-                    <input
-                      class="search-field"
-                      type="text"
-                      name="text"
-                      id="search-field"
-                      placeholder="Текст поиска"
-                    />
-                    <button class="button search-button">Найти</button>
-                  </form>
-                </li>
-                <li class="navigation-item">
-                  <a class="button login-button" href="#">Войти</a>
-                </li>
-              </ul>
-              <ul class="compare-cart">
-                <li class="navigation-item">
-                  <a class="navigation-link" href="#">Сравнить</a>
-                </li>
-                <li class="navigation-item">
-                  <a class="navigation-link" href="#">Корзина</a>
-                </li>
-              </ul>
-            </div>
-            <div class="nav-main-wrapper">
-              <a class="nav-catalog-link" href="catalog.html"
-                >Каталог товаров</a
+    <header class="container header-menu-container header-wrapper-catalog">
+      <h1 class="visually-hidden">Девайс.</h1>
+      <nav class="navigation-container">
+        <a class="logo" href="index.html">
+          <img
+            class="page-header-logo"
+            src="images/logo.svg"
+            width="145"
+            height="36"
+            alt="Логотип магазина"
+          />
+        </a>
+        <h2 class="visually-hidden">Пользовательская навигация.</h2>
+        <div class="nav-wrapper-user">
+          <ul class="navigation-user">
+            <li class="navigation-item">
+              <form
+                class="search-form"
+                action="https://echo.htmlacademy.ru/"
+                method="get"
               >
-              <button class="button catalog-button"></button>
-              <span class="visually-hidden">Кнопка раскрытия каталога.</span>
-              <ul class="nav-menu">
-                <li>
-                  <a class="navigation-link" href="#delivery">Доставка</a>
-                </li>
-                <li>
-                  <a class="button navigation-button" href="#">Гарантия</a>
-                </li>
-                <li>
-                  <a class="navigation-link" href="#contacts">Контакты</a>
-                </li>
-              </ul>
-            </div>
-          </nav>
-        </div>
-      </div>
-    </header>
-    <main class="main-inner">
-      <header class="inner-header">
-        <div class="container">
-          <h1 class="inner-header-title">Моноподы для селфи</h1>
-          <ul class="breadcrumbs">
-            <li class="breadcrumbs-item">
-              <a class="breadcrumbs-link" href="index.html">Главная</a>
+                <input
+                  class="search-field"
+                  type="text"
+                  name="text"
+                  id="search-field"
+                  placeholder="Текст поиска"
+                />
+                <button class="button search-button">Найти</button>
+              </form>
             </li>
-            <li class="breadcrumbs-item">
-              <a class="breadcrumbs-link" href="catalog.html"
-                >Каталог товаров</a
-              >
+            <li class="navigation-item">
+              <a class="button login-button" href="#">Войти</a>
             </li>
-            <li class="breadcrumbs-item">
-              <a class="breadcrumbs-link">Моноподы для селфи</a>
+          </ul>
+          <ul class="compare-cart">
+            <li class="navigation-item">
+              <a class="navigation-link" href="#">Сравнить</a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link" href="#">Корзина</a>
             </li>
           </ul>
         </div>
+        <div class="nav-main-wrapper">
+          <a class="nav-catalog-link" href="catalog.html">Каталог товаров</a>
+          <button class="button catalog-button"></button>
+          <span class="visually-hidden">Кнопка раскрытия каталога.</span>
+          <ul class="nav-menu">
+            <li>
+              <a class="navigation-link" href="#delivery">Доставка</a>
+            </li>
+            <li>
+              <a class="button navigation-button" href="#">Гарантия</a>
+            </li>
+            <li>
+              <a class="navigation-link" href="#contacts">Контакты</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="main-inner">
+      <header class="container inner-header">
+        <h1 class="inner-header-title">Моноподы для селфи</h1>
+        <ul class="breadcrumbs">
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link" href="index.html">Главная</a>
+          </li>
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link" href="catalog.html">Каталог товаров</a>
+          </li>
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link">Моноподы для селфи</a>
+          </li>
+        </ul>
       </header>
       <section class="catalog-products">
         <div class="catalog-wrapper container">
@@ -222,7 +212,9 @@
                     />
                   </a>
                   <span class="title-price-wrapper">
-                    <h3 class="product-card-title">Любительская селфи-палка</h3>
+                    <span class="product-card-title"
+                      >Любительская селфи-палка</span
+                    >
                     <b class="product-card-price">500р</b>
                   </span>
                 </li>
@@ -237,9 +229,9 @@
                     />
                   </a>
                   <span class="title-price-wrapper">
-                    <h3 class="product-card-title">
+                    <span class="product-card-title">
                       Профессиональная селфи-палка
-                    </h3>
+                    </span>
                     <b class="product-card-price">1 500р</b>
                   </span>
                 </li>
@@ -254,9 +246,9 @@
                     />
                   </a>
                   <span class="title-price-wrapper">
-                    <h3 class="product-card-title">
+                    <span class="product-card-title">
                       Непотопляемая селфи-палка
-                    </h3>
+                    </span>
                     <b class="product-card-price">2 500р</b>
                   </span>
                 </li>
@@ -271,16 +263,18 @@
                     />
                   </a>
                   <span class="title-price-wrapper">
-                    <h3 class="product-card-title">
+                    <span class="product-card-title">
                       Селфи-палка "Следуй за мной"
-                    </h3>
+                    </span>
                     <b class="product-card-price">1 500р</b>
                   </span>
                 </li>
               </ul>
+              <div class="container">
               <button class="button pagination-show-more" type="button">
                 Загрузить еще
               </button>
+            </div>
               <div class="pagination-cat-wrapper container">
                 <ul class="pagination">
                   <li class="pagination-text">
