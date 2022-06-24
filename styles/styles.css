@@ -436,8 +436,6 @@ body {
 .button {
     color: #000000;
     text-decoration: none;
-    padding: 0;
-    margin: 0;
 }
 
 .product-card-link {
@@ -586,6 +584,7 @@ body {
 
 .catalog-wrapper {
     display: flex;
+    justify-content: flex-start;
 
 }
 
@@ -603,11 +602,20 @@ body {
     font-family: 'Rubik';
     font-size: 16px;
     line-height: 19px;
+    margin-bottom: 18px;
 }
 
 .catalog-filter-item:nth-child(1) {
     margin-top: 21px;
 }
+.catalog-filter-item:last-child {
+    margin-bottom: 0;
+}
+
+.control-input-price {
+    margin-top: 30px;
+}
+
 
 .product-card-title {
     font-family: 'Rubik';
@@ -668,6 +676,7 @@ body {
     letter-spacing: 0.2em;
     text-transform: uppercase;
     margin: 0;
+    margin-left: 2px;
     margin-top: 25px;
 }
 
@@ -685,8 +694,6 @@ body {
     padding-top: 18px;
     padding-bottom: 18px;
     margin-top: 44px;
-
-
 }
 
 .select-control {
@@ -698,16 +705,28 @@ body {
 }
 
 .catalog-filter {
-    padding-left: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
-.catalog-filter-group {
-    border: none;
+.filter-group-price {
     padding: 0;
-
+    margin-top: 60px;
+    border: none;
 }
 
+.filter-group-color {
+    padding: 0;
+    margin-top: 39px;
+    border: none;
+}
 
+.filter-group-bt {
+    padding: 0;
+    margin-top: 35px;
+    border: none;
+}
 .catalog-filter-list {
     margin: 0;
     padding: 0;
@@ -1053,6 +1072,3 @@ li.spec-item-radius {
     width: 20px;
 }
 
-.control-input {
-    margin-top: 30px;
-}
