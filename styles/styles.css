@@ -511,9 +511,10 @@ body {
 .newsletter {
     background-color: #ebebeb;
     margin-top: 70px;
+}
+.newsletter-wrapper {
     padding: 64px 133px 56px 147px;
 }
-
 .newsletter-title {
     margin: 0;
     margin-top: 64px;
