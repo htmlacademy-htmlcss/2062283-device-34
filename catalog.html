@@ -182,7 +182,7 @@
             </fieldset>
             <button class="button-more">Показать</button>
           </form>
-          <div class="catalog-right-wrapper">
+          <div class="catalog-right-wrapper container">
             <div class="sort-wrapper">
               <h3 class="sort-title">Сортировка</h3>
               <select class="select-control" aria-label="Сортировка">
@@ -271,13 +271,13 @@
                 </li>
               </ul>
               <div class="container">
-              <button class="button pagination-show-more" type="button">
-                Загрузить еще
-              </button>
-            </div>
+                <button class="button pagination-show-more" type="button">
+                  Загрузить еще
+                </button>
+              </div>
               <div class="pagination-cat-wrapper container">
                 <ul class="pagination">
-                  <li class="pagination-text">
+                  <li class="pagination-text-prev">
                     <a
                       class="pagination-link pagination-prev pagination-disabled"
                       >Назад</a
@@ -302,7 +302,7 @@
                       >15</a
                     >
                   </li>
-                  <li class="pagination-text">
+                  <li class="pagination-text-next">
                     <a
                       class="pagination-link pagination-next pagination-enabled"
                       href="#"
@@ -317,101 +317,105 @@
       </section>
     </main>
     <footer class="page-footer">
-      <section class="footer-menu">
-        <h3 class="visually-hidden">Услуги и контакты</h3>
-        <a href="index.html">
-          <img
-            class="site-logo"
-            src="images/logo-footer.svg"
-            width="147"
-            height="31"
-            alt="Логотип сайта"
-          />
-        </a>
-        <div class="footer-menu-wrapper container">
-          <h3 class="visually-hidden">Адрес.</h3>
-          <address class="contacts-footer">
-            <p class="contacts-address-text">
-              Санкт-Петербург, набережная реки Карповки, 5, литера П.
-            </p>
-          </address>
-          <h3 class="visually-hidden">Услуги.</h3>
-          <ul class="footer-services-list">
-            <li>
-              <a class="services-item-link" href="#">Доставка</a>
-            </li>
-            <li>
-              <a class="services-item-link" href="#">Гарантия</a>
-            </li>
-            <li>
-              <a class="services-item-link" href="#">Контакты</a>
-            </li>
-          </ul>
-          <h3 class="visually-hidden">Номер телефона.</h3>
-          <a class="contacts-phone-footer" href="tel:+78128121212"
-            >Тел.:+7 (812) 812-12-12</a
-          >
-        </div>
-      </section>
-      <section class="footer-social">
-        <h3 class="visually-hidden">Мы в соцсетях</h3>
-        <div class="footer-social-wrapper container">
-          <span class="social-rectangle">Контентный прямоугольник></span>
-          <ul class="footer-social-list">
-            <li class="footer-social-item">
-              <a class="button button-social" href="t.me/htmlacademy">
-                <img
-                  class="social-logo"
-                  src="images/telegram.svg"
-                  width="14"
-                  height="12"
-                  alt="иконка телеграм."
-                />
-                <span class="visually-hidden">Телеграм.</span></a
-              >
-            </li>
-            <li class="footer-social-item">
-              <a
-                class="button button-social"
-                href="https://www.youtube.com/user/htmlacademyru"
-              >
-                <img
-                  class="social-logo"
-                  src="images/youtube.svg"
-                  width="16"
-                  height="11"
-                  alt="Иконка youtube."
-                />
-                <span class="visually-hidden">YouTube.</span></a
-              >
-            </li>
-            <li class="footer-social-item">
-              <a
-                class="button button-social"
-                href="https://twitter.com/htmlacademy_ru"
-              >
-                <img
-                  class="social-logo"
-                  src="images/twitter.svg"
-                  width="15"
-                  height="14"
-                  alt="Иконка twitter."
-                />
-                <span class="visually-hidden">Twitter.</span></a
-              >
-            </li>
-          </ul>
-          <a class="academy-logo" href="https://htmlacademy.ru/">
+      <div class="footer-wrapper container">
+        <section class="footer-menu">
+          <h3 class="visually-hidden">Услуги и контакты</h3>
+          <a href="index.html">
             <img
-              class="academy-logo"
-              src="images/html.svg"
-              width="115"
-              height="33"
-              alt="Логотип академии."
+              class="site-logo"
+              src="images/logo-footer.svg"
+              width="145"
+              height="36"
+              alt="Логотип сайта"
             />
           </a>
-        </div>
-      </section>
+          <div class="footer-menu-wrapper container">
+            <h3 class="visually-hidden">Адрес.</h3>
+            <address class="contacts-footer">
+              <p class="contacts-address-text">
+                Санкт-Петербург, набережная реки Карповки, 5, литера П.
+              </p>
+            </address>
+            <h3 class="visually-hidden">Услуги.</h3>
+            <ul class="footer-services-list">
+              <li>
+                <a class="services-item-link" href="#">Доставка</a>
+              </li>
+              <li>
+                <a class="services-item-link" href="#">Гарантия</a>
+              </li>
+              <li>
+                <a class="services-item-link" href="#">Контакты</a>
+              </li>
+            </ul>
+            <h3 class="visually-hidden">Номер телефона.</h3>
+            <a class="contacts-phone-footer" href="tel:+78128121212"
+              >Тел.:+7 (812) 812-12-12</a
+            >
+          </div>
+        </section>
+        <section class="footer-social">
+          <h3 class="visually-hidden">Мы в соцсетях</h3>
+          <div class="footer-social-wrapper container">
+            <span class="social-rectangle">Контентный прямоугольник></span>
+            <ul class="footer-social-list">
+              <li class="footer-social-item">
+                <a class="button button-social" href="t.me/htmlacademy">
+                  <img
+                    class="social-logo"
+                    src="images/telegram.svg"
+                    width="14"
+                    height="12"
+                    alt="иконка телеграм."
+                  />
+                  <span class="visually-hidden">Телеграм.</span></a
+                >
+              </li>
+              <li class="footer-social-item">
+                <a
+                  class="button button-social"
+                  href="https://www.youtube.com/user/htmlacademyru"
+                >
+                  <img
+                    class="social-logo"
+                    src="images/youtube.svg"
+                    width="16"
+                    height="11"
+                    alt="Иконка youtube."
+                  />
+                  <span class="visually-hidden">YouTube.</span></a
+                >
+              </li>
+              <li class="footer-social-item">
+                <a
+                  class="button button-social"
+                  href="https://twitter.com/htmlacademy_ru"
+                >
+                  <img
+                    class="social-logo"
+                    src="images/twitter.svg"
+                    width="15"
+                    height="14"
+                    alt="Иконка twitter."
+                  />
+                  <span class="visually-hidden">Twitter.</span></a
+                >
+              </li>
+            </ul>
+            <div class="academy-logo-wrapper">
+            <a class="academy-logo" href="https://htmlacademy.ru/">
+              <img
+                class="academy-logo"
+                src="images/html.svg"
+                width="115"
+                height="33"
+                alt="Логотип академии."
+              />
+            </a>
+          </div>
+          </div>
+        </section>
+      </div>
     </footer>
   </body>
 </html>
