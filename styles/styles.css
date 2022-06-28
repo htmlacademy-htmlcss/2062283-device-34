@@ -316,10 +316,7 @@ body {
     flex-wrap: wrap;
     align-items: center;
     margin-top: 62px;
-    justify-content: flex-start;
-    max-width: 1160px;
-    width: 100%;
-    
+    justify-content: space-between;
 }
 
 .social-rectangle {
@@ -334,7 +331,7 @@ body {
     max-width: 150px;
     margin: 0;
     padding: 0;
-    margin-left: 485px;
+    margin-left: 170px;
 }
 
 .footer-social-item {
@@ -343,7 +340,6 @@ body {
 }
 .academy-logo-wrapper {
     margin: 0;
-    margin-left: 340px;
     width: 115px;
 }
 
@@ -600,8 +596,8 @@ body {
 
 .contacts-address-text {
     margin: 0;
-    max-width: 234px;
-    width: auto;
+    max-width: 400px;
+    min-height: 40px;
 }
 
 .catalog-products {
