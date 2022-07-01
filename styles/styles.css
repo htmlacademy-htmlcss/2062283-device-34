@@ -38,7 +38,7 @@ body {
     max-width: 1160px;
     width: 100%;
     margin: 0 auto;
-}page
+}
 
 .page-header-logo {
     position: relative;
@@ -636,26 +636,48 @@ body {
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
-
-input.search-field:focus {
-    border: 2px solid #af4fff;
-}
+.search-field,
+.search-button {
+    float: left;
+} 
 
 .search-field {
+    position: relative;
     font-family: inherit;
     font-size: 16px;
     line-height: 20px;
-    padding: 10px 207px 10px 45px;
+    padding: 15px 212px 11px 45px;
     width: 103px;
     background-image: url(/images/search-icon.svg);
     background-repeat: no-repeat;
     background-color: #ffe17f;
     outline: none;
-    border: 3px solid;
-    border-right: none;
-    border-radius: 20px 0 0 20px;
+    border: none;
     background-position: center left 16px;
 }
+
+.search-field:focus {
+    outline: 2px solid #af4fff;
+}
+
+.search-label {
+    position: relative;
+}
+
+.search-label::after {
+    position: absolute;
+    left: -525px;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 359px;
+    height: 40px;
+    content: "";
+    border: 3px solid #000000;
+    border-right: none;
+    border-radius: 20px 0 0 20px;
+}
+
 
 .search-field text {
     opacity: 0.3;
@@ -680,8 +702,8 @@ input.search-field:focus {
 }
 
 .search-button:active {
-    color: #ffffff;
-    opacity: 0.3;
+    color: rgba(255, 255, 255, 0.3);
+    /* opacity: 0.3; */
     cursor: pointer;
 }
 
@@ -862,7 +884,6 @@ input.search-field:focus {
     margin-right: 80px;
 }
 
-
 .delivery-info {
     margin-right: 43px;
     color: #000000 0.3;
@@ -872,7 +893,6 @@ input.search-field:focus {
     border-radius: 50%;
     background-color: #dcdcdc 50%;
     padding: 18px 20px 14px 19px;
-
 }
 
 .newsletter {
@@ -1070,6 +1090,21 @@ input.search-field:focus {
     letter-spacing: 0.2em;
     text-transform: uppercase;
     padding: 10px 5px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000000;
+    width: 210px;
+    padding: 0;
+    margin: 0;
+    margin-right: 45px;
+    margin-top: 46px;
 }
 
 .more-text {
@@ -1092,22 +1127,16 @@ input.search-field:focus {
 
 .button-more:hover {
     background-color: #ffe17f;
-    padding: 10px 5px;
+}
+
+.button-more:focus {
+    outline: 2px solid #af4fff;
 }
 
 .button-more:active {
     position: static;
     background-color: #ffcc33;
-    padding: 10px 5px;
 }
-
-.button-more:focus {
-    outline: 2px solid #af4fff;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
-
 
 .contacts-footer {
     font-family: 'Rubik';
@@ -1349,21 +1378,7 @@ li.spec-item-radius {
 }
 
 .button-more {
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 800;
-    font-size: 18px;
-    line-height: 21px;
-    text-align: center;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: #000000;
-    width: 210px;
-    padding: 0;
-    margin: 0;
-    margin-right: 45px;
-    margin-top: 46px;
+
 }
 
 .more-about {
