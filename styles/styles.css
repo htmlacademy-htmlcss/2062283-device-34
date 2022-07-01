@@ -217,12 +217,23 @@ body {
 }
 
 .slider-container {
+    position: relative;
     display: flex;
     align-items: center;
     margin-right: 0;
     margin-top: -100px;
     max-width: 560px;
     width: 100%;
+}
+
+.slider-prev {
+    position: absolute;
+    right: 510px;
+}
+
+.slider-next {
+    position: absolute;
+    left: 540px;
 }
 
 .slider-button:hover {
@@ -362,6 +373,7 @@ body {
 
 .services-item {
     margin-bottom: 45px;
+    width: 220px;
 }
 
 .services {
@@ -641,40 +653,40 @@ body {
     float: left;
 } 
 
-.search-field {
+.search-form {
     position: relative;
+}
+
+.search-field {
     font-family: inherit;
     font-size: 16px;
     line-height: 20px;
-    padding: 15px 212px 11px 45px;
-    width: 103px;
+    padding: 15px 10px 12px 48px;
+    width: 310px;
     background-image: url(/images/search-icon.svg);
     background-repeat: no-repeat;
     background-color: #ffe17f;
     outline: none;
     border: none;
-    background-position: center left 16px;
+    background-position: center left 20px;
+    margin-right: 2px;
 }
 
 .search-field:focus {
     outline: 2px solid #af4fff;
 }
 
-.search-label {
-    position: relative;
-}
-
 .search-label::after {
+    box-sizing: border-box;
     position: absolute;
-    left: -525px;
-    top: 0;
+    left: 7px;
+    top: 2px;
     bottom: 0;
     right: 0;
-    width: 359px;
-    height: 40px;
+    width: 360px;
+    height: 43px;
     content: "";
     border: 3px solid #000000;
-    border-right: none;
     border-radius: 20px 0 0 20px;
 }
 
@@ -878,21 +890,25 @@ body {
     justify-content: space-between;
 }
 
-.delivery-car {}
-
 .delivery-notice-text {
     margin-right: 80px;
 }
 
 .delivery-info {
     margin-right: 43px;
-    color: #000000 0.3;
-    width: 2px;
-    height: 12px;
-    border: 2px solid #dcdcdc;
+    opacity: 0.3;
+    border: 2px hidden #dcdcdc;
     border-radius: 50%;
     background-color: #dcdcdc 50%;
     padding: 18px 20px 14px 19px;
+}
+
+.delivery-car {
+    color: #ffe17f;
+}
+
+.delivery-car-icon:hover {
+    fill: #ffc700;
 }
 
 .newsletter {
@@ -1084,13 +1100,6 @@ body {
 .button-more {
     position: relative;
     font-family: 'Raleway';
-    font-size: 18px;
-    line-height: 21px;
-    text-align: center;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    padding: 10px 5px;
-    font-family: 'Raleway';
     font-style: normal;
     font-weight: 800;
     font-size: 18px;
@@ -1105,6 +1114,23 @@ body {
     margin: 0;
     margin-right: 45px;
     margin-top: 46px;
+    padding: 10px 5px;
+}
+
+.button-more:hover {
+    background-color: #ffe17f;
+}
+
+.button-more:focus {
+    outline: 2px solid #af4fff;
+}
+
+.button-more:ac {
+    background-color: #ffcc33;
+}
+.button-more:active::after {
+    background-color: #ffcc33;
+    display: none;
 }
 
 .more-text {
@@ -1116,7 +1142,7 @@ body {
     position: absolute;
     left: 2%;
     right: 0%;
-    top: 30%;
+    top: 35%;
     bottom: 60%;
     width: 200px;
     height: 8px;
@@ -1125,18 +1151,7 @@ body {
     z-index: 100;
 }
 
-.button-more:hover {
-    background-color: #ffe17f;
-}
 
-.button-more:focus {
-    outline: 2px solid #af4fff;
-}
-
-.button-more:active {
-    position: static;
-    background-color: #ffcc33;
-}
 
 .contacts-footer {
     font-family: 'Rubik';
@@ -1377,10 +1392,6 @@ li.spec-item-radius {
     list-style: none;
 }
 
-.button-more {
-
-}
-
 .more-about {
     position: relative;
     font-family: 'Raleway';
@@ -1396,6 +1407,8 @@ li.spec-item-radius {
     display: block;
     margin-top: 40px;
     text-align: left;
+    margin-left: 20px;
+    padding-left: 3px;
 }
 
 .about-text {
@@ -1417,68 +1430,22 @@ li.spec-item-radius {
 }
 
 .button-delivery {
-    position: relative;
+    display: block;
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 800;
     font-size: 18px;
     line-height: 21px;
-    text-align: center;
+    text-align: left;
     letter-spacing: 0.2em;
     text-transform: uppercase;
     text-decoration: none;
-    padding: 9px 120px 11px 20px;
-}
-
-.button-delivery:active {
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 800;
-    font-size: 18px;
-    line-height: 21px;
-    text-align: center;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    text-decoration: none;
+    padding: 9px 17px 11px 25px;
     color: #ffe17f;
+    width: 100%;
+    pointer-events: none;
     background-color: #000000;
-    padding: 9px 120px 11px 20px;
 }
-
-.delivery-text {
-    position: relative;
-    z-index: 200;
-}
-
-.button-delivery::after {
-    position: absolute;
-    left: 0%;
-    right: 0%;
-    top: 40%;
-    bottom: 40%;
-    width: 160px;
-    height: 8px;
-    background-color: #ffe17f;
-    content: "";
-    z-index: 100;
-}
-
-.button-delivery:active {
-    position: static;
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 800;
-    font-size: 18px;
-    line-height: 21px;
-    text-align: center;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: #ffe17f;
-    background-color: #000000;
-    padding: 9px 120px 11px 20px;
-}
-
 
 .button-warranty {
     position: relative;
@@ -1491,61 +1458,26 @@ li.spec-item-radius {
     letter-spacing: 0.2em;
     text-transform: uppercase;
     text-decoration: none;
-    padding: 9px 120px 11px 20px;
+    padding: 9px 17px 11px 25px;
 }
 
-.button-warranty:active {
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 800;
-    font-size: 18px;
-    line-height: 21px;
-    text-align: center;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: #ffe17f;
-    background-color: #000000;
-    padding: 9px 120px 11px 20px;
-}
-
-.warranty-text {
-    position: relative;
-    z-index: 200;
-}
-
-.button-warrant::after {
+.button-warranty::after {
     position: absolute;
-    left: 0%;
-    right: 0%;
-    top: 40%;
-    bottom: 40%;
-    width: 160px;
+    left: 0;
+    right: 0;
+    top: 15px;
+    bottom: 0;
+    width: 163px;
     height: 8px;
     background-color: #ffe17f;
     content: "";
     z-index: 100;
 }
 
-.button-delivery:active {
-    position: static;
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 800;
-    font-size: 18px;
-    line-height: 21px;
-    text-align: center;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: #ffe17f;
-    background-color: #000000;
-    padding: 9px 120px 11px 20px;
+.warranty-text {
+    position: relative;
+    z-index: 200;
 }
-
-
-
-
 
 .button-credit {
     position: relative;
@@ -1558,9 +1490,8 @@ li.spec-item-radius {
     letter-spacing: 0.2em;
     text-transform: uppercase;
     text-decoration: none;
-    padding: 9px 130px 11px 30px;
+    padding: 9px 35px 11px;
 }
-
 
 .credit-text {
     position: relative;
@@ -1569,31 +1500,15 @@ li.spec-item-radius {
 
 .button-credit::after {
     position: absolute;
-    left: 0%;
-    right: 0%;
-    top: 40%;
-    bottom: 40%;
-    width: 160px;
+    left: 1px;
+    right: 0;
+    top: 15px;
+    bottom: 0;
+    width: 162px;
     height: 8px;
     background-color: #ffe17f;
     content: "";
     z-index: 100;
-}
-
-.button-credit:active {
-    position: static;
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 800;
-    font-size: 18px;
-    line-height: 21px;
-    text-align: center;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: #ffe17f;
-    background-color: #000000;
-    padding: 9px 120px 11px 30px;
 }
 
 .contact-us {
@@ -1610,7 +1525,9 @@ li.spec-item-radius {
     color: #000000;
     display: block;
     margin-top: 40px;
+    margin-left: 28px;
     text-align: start;
+    padding-left: 5px;
 }
 
 .contact-text {
@@ -1778,10 +1695,11 @@ li.spec-item-radius {
 }
 
 .slider-pagination-button-current {
-    background-color: #ffffff;
+    
     border: none;
     font-size: 5px;
     padding: 0;
+    outline: none;
 }
 
 .slider-pagination-button-current:hover {
@@ -1794,7 +1712,6 @@ li.spec-item-radius {
 
 .slider-pagination-button-current:focus {
     outline: 2px solid #af4fff;
-    ;
 }
 
 .slider-pagination-button:hover {
@@ -1807,7 +1724,6 @@ li.spec-item-radius {
 
 .slider-pagination-button:focus {
     outline: 2px solid #af4fff;
-    ;
 }
 
 
