@@ -8,9 +8,9 @@
 </head>
   <body>
     <header class="container">
-      <div class="header-menu-container">
         <div class="header-wrapper">
           <h1 class="visually-hidden">Девайс.</h1>
+          <span class="header-decoration-text">01</span>
           <nav class="navigation-container">
             <a class="page-header-logo" href="index.html">
               <img
@@ -103,7 +103,7 @@
               </ul>
             </div>
             <div class="nav-main-wrapper">
-              <a class="button catalog-button" href="catalog.html">
+                <button class="button catalog-button">
                 Каталог товаров
                 <svg
                   class="catalog-icon"
@@ -112,13 +112,13 @@
                   width="16"
                   height="17"
                   viewBox="0 0 16 17"
-                  fill="none"
+                  fill="currentColor"
                   xmlns="http://www.w3.org/2000/svg"
                 >
-                  <path d="M16 7.39H9v-7H7v7H0v2h7v7h2v-7h7v-2Z" fill="#000" />
+                  <path d="M16 7.39H9v-7H7v7H0v2h7v7h2v-7h7v-2Z" fill="currentColor" />
                 </svg>
-              </a>
               <span class="visually-hidden">Кнопка раскрытия каталога.</span>
+              </button>
               <ul class="nav-menu">
                 <li>
                   <a class="link nav-delivery-link" href="#delivery"
@@ -137,7 +137,6 @@
             </div>
           </nav>
         </div>
-      </div>
     </header>
     <main class="main-index">
       <section class="best-product-container container">
@@ -247,8 +246,8 @@
                   </a>
                 </li>
               </ul>
-            </div>
-            <button class="button button-more" >
+            </div>     
+            <button class="button button-more">
               <span class="more-text">Подробнее</span>
             </a>
           </div>
