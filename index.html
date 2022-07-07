@@ -60,7 +60,7 @@
                     </a>
                   </li>
                 </ul>
-                <ul class="compare-cart">
+                <ul class="compare-cart-index">
                   <li class="navigation-item">
                     <a class="link compare" href="#">
                       <svg
@@ -180,7 +180,7 @@
             <div class="pagination-wrapper">
               <ul class="slider-pagination">
                 <li class="slider-pagination-item">
-                  <button class="button slider-pagination-button-current" href="#">
+                  <button class="button slider-pagination-button-current">
                     <svg
                       class="slider-current-icon"
                       aria-hidden="true"
@@ -201,10 +201,10 @@
                       />
                     </svg>
                     <span class="visually-hidden">1 описание.</span>
-                  </a>
+                  </button>
                 </li>
                 <li class="slider-pagination-item">
-                  <button class="button slider-pagination-button" href="#">
+                  <button class="button slider-pagination-button">
                     <svg
                       class="slider-current-icon"
                       aria-hidden="true"
@@ -217,10 +217,10 @@
                       <circle cx="10.5" cy="11.4" r="10.5" fill="#fff" />
                     </svg>
                     <span class="visually-hidden">2 описание.</span>
-                  </a>
+                  </button>
                 </li>
                 <li class="slider-pagination-item">
-                  <button class="button slider-pagination-button" href="#">
+                  <button class="button slider-pagination-button">
                     <svg
                       class="slider-current-icon"
                       aria-hidden="true"
@@ -233,13 +233,13 @@
                       <circle cx="10.5" cy="11.4" r="10.5" fill="#fff" />
                     </svg>
                     <span class="visually-hidden">3 описание.</span>
-                  </a>
+                  </button>
                 </li>
               </ul>
             </div>     
             <button class="button button-more">
               <span class="more-text">Подробнее</span>
-            </a>
+            </button>
           </div>
           <ul class="spec-list">
             <li class="spec-item-range">
@@ -340,13 +340,13 @@
           <div class="services-list-wrapper">
             <ul class="services-list">
               <li class="services-item">
-                <button class="button button-delivery" href="#"><span class="delivery-text">Доставка</span></a>
+                <button class="button button-delivery"><span class="delivery-text">Доставка</span></button>
               </li>
               <li class="services-item">
-                <button class="button button-warranty" href="#"><span class="warranty-text">Гарантия</span></a>
+                <button class="button button-warranty"><span class="warranty-text">Гарантия</span></button>
               </li>
               <li class="services-item">
-                <button class="button button-credit" href="#"><span class="credit-text">Кредит</a>
+                <button class="button button-credit"><span class="credit-text">Кредит</span></button>
               </li>
             </ul>
           </div>
@@ -361,18 +361,26 @@
         </div>
       </section>
       <div class="delivery-notice container">
-        <button class="button delivery-notice-link" href="#">
-          <svg
-          class="delivery-car-icon" 
-          aria-hidden="true"
-          focusable="false"
-          width="47" height="32" viewBox="0 0 47 32" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#a)" fill="#000"><path d="m46.7 15.76-6.5-8.2c-.3-.4-.7-.6-1.2-.6h-8.3v-5.1c0-.8-.7-1.5-1.5-1.5H1.5c-.8 0-1.5.7-1.5 1.5s.7 1.5 1.5 1.5h26.2V25.06H15.8c-.6-1.9-2.4-3.3-4.5-3.3-2.6 0-4.8 2.2-4.8 4.8 0 2.6 2.2 4.8 4.8 4.8 2.1 0 3.9-1.4 4.5-3.3h13.4c.8 0 1.5-.7 1.5-1.5V9.96h7.6l5.7 7.3v7.9h-2.2c-.6-1.9-2.4-3.3-4.5-3.3-2.6 0-4.8 2.2-4.8 4.8 0 2.6 2.1 4.8 4.8 4.8 2.1 0 3.9-1.4 4.5-3.3h3.7c.8 0 1.5-.7 1.5-1.5v-9.9c0-.4-.1-.7-.3-1Zm-35.4 12.6c-1 0-1.8-.8-1.8-1.8s.8-1.8 1.8-1.8 1.8.8 1.8 1.8-.9 1.8-1.8 1.8Zm26.1 0c-1 0-1.8-.8-1.8-1.8s.8-1.8 1.8-1.8 1.8.8 1.8 1.8-.9 1.8-1.8 1.8Z"/><path d="M19.4 9.96c.8 0 1.5-.7 1.5-1.5s-.7-1.5-1.5-1.5H4.8c-.8 0-1.5.7-1.5 1.5s.7 1.5 1.5 1.5h14.6ZM17.7 15.06c0-.8-.7-1.5-1.5-1.5H1.5c-.8 0-1.5.7-1.5 1.5s.7 1.5 1.5 1.5h14.7c.8 0 1.5-.7 1.5-1.5Z"/></g><defs><clipPath id="a"><path fill="#fff" transform="translate(0 .36)" d="M0 0h47v31H0z"/></clipPath></defs></svg>
+        <button class="button delivery-notice-link">
+          <svg class="delivery-car-icon"
+          width="47" height="31" viewBox="0 0 47 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_28600_23)">
+            <path d="M46.7 15.4L40.2 7.2C39.9 6.8 39.5 6.6 39 6.6H30.7V1.5C30.7 0.7 30 0 29.2 0H1.5C0.7 0 0 0.7 0 1.5C0 2.3 0.7 3 1.5 3H27.7V24.7H15.8C15.2 22.8 13.4 21.4 11.3 21.4C8.7 21.4 6.5 23.6 6.5 26.2C6.5 28.8 8.7 31 11.3 31C13.4 31 15.2 29.6 15.8 27.7H29.2C30 27.7 30.7 27 30.7 26.2V9.6H38.3L44 16.9V24.8H41.8C41.2 22.9 39.4 21.5 37.3 21.5C34.7 21.5 32.5 23.7 32.5 26.3C32.5 28.9 34.6 31.1 37.3 31.1C39.4 31.1 41.2 29.7 41.8 27.8H45.5C46.3 27.8 47 27.1 47 26.3V16.4C47 16 46.9 15.7 46.7 15.4ZM11.3 28C10.3 28 9.5 27.2 9.5 26.2C9.5 25.2 10.3 24.4 11.3 24.4C12.3 24.4 13.1 25.2 13.1 26.2C13.1 27.2 12.2 28 11.3 28ZM37.4 28C36.4 28 35.6 27.2 35.6 26.2C35.6 25.2 36.4 24.4 37.4 24.4C38.4 24.4 39.2 25.2 39.2 26.2C39.2 27.2 38.3 28 37.4 28Z" fill="black"/>
+            <path d="M19.4 9.6C20.2 9.6 20.9 8.9 20.9 8.1C20.9 7.3 20.2 6.6 19.4 6.6H4.8C4 6.6 3.3 7.3 3.3 8.1C3.3 8.9 4 9.6 4.8 9.6H19.4Z" fill="black"/>
+            <path d="M17.7 14.7C17.7 13.9 17 13.2 16.2 13.2H1.5C0.7 13.2 0 13.9 0 14.7C0 15.5 0.7 16.2 1.5 16.2H16.2C17 16.2 17.7 15.5 17.7 14.7Z" fill="black"/>
+            </g>
+            <defs>
+            <clipPath id="clip0_28600_23">
+            <rect width="47" height="31" fill="white"/>
+            </clipPath>
+            </defs>
+            </svg>
           <span class="delivery-notice-text">Доставим редкий товар под заказ</span>
           <svg
           class="delivery-info" 
           aria-hidden="true"
           focusable="false" width="4" height="12" viewBox="0 0 4 12" fill='currentColor' xmlns="http://www.w3.org/2000/svg"><path d="M3 0H1v2h2V0ZM3 4H1v8h2V4Z"/></svg>
-        </a>
+        </button>
       </div>
       <section class="about-container container">
         <div class="about-wrapper">
@@ -392,7 +400,7 @@
             <li class="about-delivery-description-item"><b>СДИК</b></li>
             <li class="about-delivery-description-item"><b>ТоксБерри</b></li>
           </ul>
-          <button class="more-about" href="#"><span class="about-text">Подробнее о нас</span></a>
+          <button class="more-about"><span class="about-text">Подробнее о нас</span></button>
         </div>
         <div class="contacts-wrapper">
           <h2 class="title contacts-title" id="contacts">Контакты</h2>
@@ -412,7 +420,7 @@
             <li class="schedule-item">пн—пт: с 10:00 до 22:00</li>
             <li class="schedule-item">сб—вс: с 10:00 до 19:00</li>
           </ul>
-          <button class="button contact-us" href="#"><span class="contact-text">Напишите нам</span></a>
+          <button class="button contact-us"><span class="contact-text">Напишите нам</span></button>
         </div>
       </section>
       <section class="newsletter">
@@ -440,7 +448,7 @@
                 name="email"
                 placeholder="Ваш e-mail"
                 required
-              /><button class="button subscribe-button" href="#"><span class="subscribe-text">Подписаться</span></button>
+              /><button class="button subscribe-button" ><span class="subscribe-text">Подписаться</span></button>
             </form>
             <span class="warning">Это бесплатно</span>
           </div>

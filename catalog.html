@@ -6,7 +6,6 @@
     <link rel="stylesheet" href="styles/styles.css" />
   </head>
   <body>
-    <body>
       <header class="container">
           <div class="catalog-header-wrapper">
             <h1 class="visually-hidden">Девайс.</h1>
@@ -56,8 +55,9 @@
                           fill="#000"
                         />
                       </svg>
-                      Войти
+                      Коля Петухов
                     </a>
+                    <a class="button log-out-button">Выйти</a>
                   </li>
                 </ul>
                 <ul class="compare-cart">
@@ -93,7 +93,8 @@
                 </ul>
               </div>
               <div class="nav-catalog-wrapper">
-                  <button class="button catalog-button">
+                <div class="dropdown-wrapper">  
+                <button class="button catalog-button">
                   Каталог товаров
                   <svg
                     class="catalog-icon"
@@ -108,7 +109,16 @@
                     <path d="M16 7.39H9v-7H7v7H0v2h7v7h2v-7h7v-2Z" fill="currentColor" />
                   </svg>
                 <span class="visually-hidden">Кнопка раскрытия каталога.</span>
-                </button>
+              </button>
+                <ul class="dropdown-list">
+                  <li class="dropdown-item-vr">Виртуальная реальность</li>
+                  <li class="dropdown-item-selfie">Моноподы для селфи</li>
+                  <li class="dropdown-item-cam">Экшн камеры</li>
+                  <li class="dropdown-item-fit">Фитнес браслеты</li>
+                  <li class="dropdown-item-watch">Умные часы</li>
+                  <li class="dropdown-item-copter">Квадрокоптеры</li>
+                </ul>
+              </div>
                 <ul class="nav-menu">
                   <li>
                     <a class="link nav-delivery-link" href="#delivery"
@@ -387,21 +397,21 @@
                       >Назад</a
                     >
                   </li>
-                  <li class="pagination-item">
+                  <li class="pagination-item-one">
                     <a class="pagination-link pagination-current">1</a>
                   </li>
-                  <li class="pagination-item">
+                  <li class="pagination-item-two">
                     <a class="pagination-link pagination-current" href="#">2</a>
                   </li>
-                  <li class="pagination-item">
+                  <li class="pagination-item-three">
                     <a class="pagination-link pagination-current" href="#">3</a>
                   </li>
-                  <li class="pagination-item">
+                  <li class="pagination-item-dots">
                     <a class="pagination-link pagination-current" href="#"
                       >...</a
                     >
                   </li>
-                  <li class="pagination-item">
+                  <li class="pagination-item-last">
                     <a class="pagination-link pagination-current" href="#"
                       >15</a
                     >

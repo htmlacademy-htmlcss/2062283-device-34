@@ -117,12 +117,21 @@ body {
     outline: none;
 }
 
+.compare-cart-index {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-left: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
 .compare-cart {
     list-style: none;
     padding: 0;
     margin: 0;
-    margin-left: 176px;
+    margin-left: 38px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -174,9 +183,8 @@ body {
     color: #ffffff;
     width: 100px;
     height: 70px;
-    left: 904px;
-    right: 0;
-    top: 83%
+    right: 164px;
+    bottom: -5px;
 }
 
 .header-wrapper-catalog {
@@ -805,6 +813,7 @@ input::-webkit-input-placeholder {
     padding: 9px 50px;
     z-index: 1;
     min-height: 40px;
+    cursor: pointer;
 }
 
 .search-button::after {
@@ -922,6 +931,17 @@ input::-webkit-input-placeholder {
     padding-left: 0;
 }
 
+.navigation-item-login {
+    display: flex;
+    justify-content: space-between;
+}
+
+.log-out-button {
+    margin-left: 28px;
+    opacity: 0.3;
+    cursor: pointer;
+}
+
 .catalog-button {
     display: flex;
     align-items: center;
@@ -959,6 +979,47 @@ input::-webkit-input-placeholder {
 .catalog-button:focus-visible {
     outline: 2px solid #af4fff;
 }
+ 
+.dropdown-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-list {
+    position: absolute;
+    display: none;
+    grid-template-columns: 222px 211px 211px;
+    grid-template-rows: 50px 50px 50px;
+    justify-self: start;
+    left: -60px;
+    position: absolute;
+    list-style: none;
+    width: 1100px;
+    background-color: #ffe17f;
+    margin: 0;
+    margin-top: 14px;
+    padding-left: 60px;
+    z-index: 2;
+    column-gap: 30px
+}
+
+.dropdown-item-cam {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+}
+
+.dropdown-item-selfie {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+.dropdown-item-watch {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+
+
 
 .header-catalog-wrapper:focus-visible {
     outline: 2px solid #af4fff;
@@ -1170,7 +1231,18 @@ input::-webkit-input-placeholder {
     padding: 0;
     cursor: pointer;
     border: none;
+    height: 100px;
 }
+
+.delivery-car-icon {
+    display: flex;
+    padding-left: 39px;
+    padding-right: 39px;
+    background-color: #ffe17f;
+    margin: 0;
+    min-height: 100px;
+}
+
 
 .delivery-notice-text {
     margin-right: 80px;
@@ -1191,17 +1263,23 @@ input::-webkit-input-placeholder {
     opacity: 1;
 }
 
+.delivery-notice-link:hover .delivery-car-icon {
+    background-color: #ffc700;
+}
+
 .delivery-notice-link:active {
     opacity: 0.3;
 }
 
-.delivery-notice-link:focus {
+.delivery-notice-link:focus-visible {
     outline: 2px solid #af4fff;
 }
 
 .delivery-notice-link:focus .delivery-info {
     background-color: #dcdcdc 50%;
 }
+
+
 
 .newsletter {
     background-color: #f0f0f0;
@@ -1500,7 +1578,7 @@ input::-webkit-input-placeholder {
     margin-right: 45px;
     margin-top: 46px;
     padding: 10px 5px;
-    background-color: rgba(239, 239, 239, 1)
+    background-color: rgba(239, 239, 239, 1);
     border: none;
     cursor: pointer;
 }
