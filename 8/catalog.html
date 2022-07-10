@@ -115,8 +115,60 @@
                       </clipPath>
                     </defs>
                   </svg>
-                  Корзина</a
-                >
+                  Корзина</a>
+                  <div class="popover popover-cart">
+                    <div class="popopver-content">
+                      <ul class="cart-item-list">
+                        <li class="cart-item">
+                          <span class="сart-item-icon">
+                            <img
+                            class="cart-item-image"
+                            src="images/selfie-amat.png"
+                            width="39"
+                            height="43"
+                            alt="Изображение профессиональной селфи-палки."
+                    />
+                          </span>
+                          <p class="cart-item-title">Любительская селфи-палка</p>
+                      <button class="cart-close">
+                        <svg
+                        class="cart-close-icon"
+                        aria-hidden="true"
+                        focusable="false"
+                        width="11" height="11" viewBox="0 0 11 11" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="m11 1-1-1-4.5 4.5L1 0 0 1l4.5 4.5L0 10l1 1 4.5-4.5L10 11l1-1-4.5-4.5L11 1Z"/></svg>
+                      <span class="visually-hidden">Удалить товар</span>
+                    </button>
+                  </li>
+                  <li class="cart-item">
+                    <span class="cart-item-icon">
+                      <img
+                      class="car-item-image"
+                      src="images/selfie-prof.png"
+                      width="39"
+                      height="43"
+                      alt="Изображение профессиональной селфи-палки."
+                    />
+                    </span>
+                    <p class="cart-item-title">Профессиональная селфи-палка</p>
+                    <button class="cart-close">
+                      <svg
+                      class="cart-close-icon"
+                      aria-hidden="true"
+                      focusable="false"
+                      width="11" height="11" viewBox="0 0 11 11" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="m11 1-1-1-4.5 4.5L1 0 0 1l4.5 4.5L0 10l1 1 4.5-4.5L10 11l1-1-4.5-4.5L11 1Z"/></svg>
+                    <span class="visually-hidden">Удалить товар</span>
+                  </button>
+                  </li>
+                  <li class="cart-item-total">
+                    <span class="total-item">Товаров: 2</span>
+                    <span class="total-price">Сумма: 2000 ₽</span>
+                  </li>
+                  <li class="cart-item-open">
+                  <a class="cart-open">Открыть корзину</a>
+                </li>
+                </ul>
+                    </div>
+                  </div>
               </li>
             </ul>
           </div>
@@ -230,12 +282,12 @@
               <div class="range">
                 <div class="range-scale">
                   <div class="range-bar">
-                    <button class="range-toggle toggle-min">
+                    <button class="range-toggle toggle-min" type="button">
                       <span class="visually-hidden"
                         >Изменить минимальную цену.</span
                       >
                     </button>
-                    <button class="range-toggle toggle-max">
+                    <button class="range-toggle toggle-max" type="button">
                       <span class="visually-hidden"
                         >Изменить максимальную цену.</span
                       >
@@ -250,137 +302,39 @@
               <legend class="catalog-filter-title">Цвет</legend>
               <ul class="catalog-filter-list">
                 <li class="catalog-filter-item">
-                  <a class="catalog-filter-link">
-                    <svg
-                      class="checkbox-icon"
-                      aria-hidden="true"
-                      focusable="false"
-                      width="20"
-                      height="20"
-                      viewBox="0 0 20 20"
-                      fill="#ebebeb"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <rect
-                        x="1"
-                        y="1"
-                        width="18"
-                        height="18"
-                        rx="2"
-                        stroke="#000"
-                        stroke-width="2"
-                      />
-                      <path
-                        d="m15 5-6.9 6.6-3.1-3v3.3L8.2 15 15 8.3V5Z"
-                        fill="#000"
-                      />
-                    </svg>
-                    Черный
-                  </a>
+                  <label class="control">
+                    <input class="visually-hidden control-input" type="checkbox" name="black" checked>
+                    <span class="control-mark"></span>
+                <span class="control-label">Черный</span>
+              </label>
                 </li>
                 <li class="catalog-filter-item">
-                  <a class="catalog-filter-link">
-                    <svg
-                      class="checkbox-icon"
-                      aria-hidden="true"
-                      focusable="false"
-                      width="20"
-                      height="20"
-                      viewBox="0 0 20 20"
-                      fill="#ebebeb"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <rect
-                        x="1"
-                        y="1"
-                        width="18"
-                        height="18"
-                        rx="2"
-                        stroke="#000"
-                        stroke-width="2"
-                      />
-                      <path
-                        d="m15 5-6.9 6.6-3.1-3v3.3L8.2 15 15 8.3V5Z"
-                        fill="#000"
-                      />
-                    </svg>
-                    Белый
-                  </a>
+                  <label class="control">
+                    <input class="visually-hidden control-input" type="checkbox" name="white" checked>
+                    <span class="control-mark"></span>
+                <span class="control-label">Белый</span>
+              </label>
                 </li>
                 <li class="catalog-filter-item">
-                  <a class="catalog-filter-link">
-                    <svg
-                      class="checkbox-icon"
-                      aria-hidden="true"
-                      focusable="false"
-                      width="20"
-                      height="20"
-                      viewBox="0 0 20 20"
-                      fill="#ebebeb"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <rect
-                        x="1"
-                        y="1"
-                        width="18"
-                        height="18"
-                        rx="2"
-                        stroke="#CCC"
-                        stroke-width="2"
-                      />
-                    </svg>
-                    Синий
-                  </a>
+                  <label class="control">
+                    <input class="visually-hidden control-input" type="checkbox" name="blue">
+                    <span class="control-mark"></span>
+                <span class="control-label">Синий</span>
+              </label>
                 </li>
                 <li class="catalog-filter-item">
-                  <a class="catalog-filter-link">
-                    <svg
-                      class="checkbox-icon"
-                      aria-hidden="true"
-                      focusable="false"
-                      width="20"
-                      height="20"
-                      viewBox="0 0 20 20"
-                      fill="#ebebeb"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <rect
-                        x="1"
-                        y="1"
-                        width="18"
-                        height="18"
-                        rx="2"
-                        stroke="#CCC"
-                        stroke-width="2"
-                      />
-                    </svg>
-                    Красный
-                  </a>
+                  <label class="control">
+                    <input class="visually-hidden control-input" type="checkbox" name="red">
+                    <span class="control-mark"></span>
+                <span class="control-label">Красный</span>
+              </label>
                 </li>
                 <li class="catalog-filter-item">
-                  <a class="catalog-filter-link">
-                    <svg
-                      class="checkbox-icon"
-                      aria-hidden="true"
-                      focusable="false"
-                      width="20"
-                      height="20"
-                      viewBox="0 0 20 20"
-                      fill="#ebebeb"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <rect
-                        x="1"
-                        y="1"
-                        width="18"
-                        height="18"
-                        rx="2"
-                        stroke="#CCC"
-                        stroke-width="2"
-                      />
-                    </svg>
-                    Розовый
-                  </a>
+                  <label class="control">
+                    <input class="visually-hidden control-input" type="checkbox" name="rose">
+                    <span class="control-mark"></span>
+                <span class="control-label">Розовый</span>
+              </label>
                 </li>
               </ul>
             </fieldset>
@@ -388,51 +342,16 @@
               <legend class="catalog-filter-title">Bluetooth</legend>
               <ul class="catalog-filter-list">
                 <li class="catalog-filter-item">
-                  <a class="catalog-filter-link">
-                    <svg
-                      class="checkbox-icon"
-                      aria-hidden="true"
-                      focusable="false"
-                      width="20"
-                      height="20"
-                      viewBox="0 0 20 20"
-                      fill="#ebebeb"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <circle
-                        cx="10"
-                        cy="10"
-                        r="9"
-                        stroke="#000"
-                        stroke-width="2"
-                      />
-                      <circle cx="10" cy="10" r="4" fill="#000" />
-                    </svg>
-                    Есть
-                  </a>
-                </li>
+                  <label class="control"></label>
+                    <input class="visually-hidden control-input" type="radio" name="product-group" value="bluetooth" checked>
+                    <span class="control-mark-bt"></span>
+                    <span class="control-label">Есть</span>
+                    </li>
                 <li class="catalog-filter-item">
-                  <a class="catalog-filter-link">
-                    <svg
-                      class="checkbox-icon"
-                      aria-hidden="true"
-                      focusable="false"
-                      width="20"
-                      height="20"
-                      viewBox="0 0 20 20"
-                      fill="#ebebeb"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <circle
-                        cx="10"
-                        cy="10"
-                        r="9"
-                        stroke="#CCC"
-                        stroke-width="2"
-                      />
-                    </svg>
-                    Нет
-                  </a>
+                  <label class="control"></label>
+                    <input class="visually-hidden control-input" type="radio" name="product-group" value="bluetooth" checked>
+                    <span class="control-mark-bt"></span>
+                    <span class="control-label">Нет</span>
                 </li>
               </ul>
             </fieldset>
@@ -448,6 +367,7 @@
                 <option value="cheap">Дешевые</option>
                 <option value="expensive">Дорогие</option>
               </select>
+              <div class="sort-buttons-wrapper">
               <button class="button button-up">
                 <svg
                   class="sort-up-icon"
@@ -459,7 +379,7 @@
                   fill="currentColor"
                   xmlns="http://www.w3.org/2000/svg"
                 >
-                  <path d="M6 0L11.5 10H0.5" fill="black" />
+                  <path d="M6 0L11.5 10H0.5" fill="currentColor" />
                 </svg>
                 <span class="visually-hidden">Сортировка по возрастанию.</span>
               </button>
@@ -474,9 +394,10 @@
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
                 >
-                  <path d="M6 10L0.499999 9.61651e-07L11.5 0" fill="black" />
+                  <path d="M6 10L0.499999 9.61651e-07L11.5 0" fill="currentColor" />
                 </svg>
               </button>
+              </div>
               <span class="visually-hidden">Сортировка по убыванию</span>
             </div>
             <div class="products-catalog-wrapper">
@@ -730,5 +651,83 @@
         </section>
       </div>
     </footer>
+    <div class="modal-container">
+      <div class="modal modal-delivery">
+        <section class="modal-title-section">
+        <h2 class="modal-title">Доставка под заказ</h2>
+        <button class="modal-close">
+          <svg
+          class="modal-close-icon"
+          aria-hidden="true"
+          focusable="false"
+          width="26" height="26" viewBox="0 0 26 26" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M26 2.36 23.64 0 13 10.64 2.36 0 0 2.36 10.64 13 0 23.64 2.36 26 13 15.36 23.64 26 26 23.64 15.36 13 26 2.36Z"/></svg>
+        <span class="visually-hidden">Закрыть окно</span>
+      </button>
+    </section>
+    <section class="modal-content">
+      <h2 class="visually hidden">Модальное окно доставки</h2>
+      <form class="submit-form" action="https://echo.htmlacademy.ru/" method="post">
+        <div class="field-group-auth">
+          <div class="auth-wrapper">
+          <label for="auth-login">Ваше имя</label>
+          <input class="auth-form-field" type="text" id="auth-login" name="auth-login" placeholder="Введите имя">
+          <span class="login-hint hint">Добавьте имя</span>
+        </div>
+        <div class="email-wrapper">
+          <label for="modal-email">Ваш email</label>
+          <input 
+          class="modal-email"
+          type="email"
+          name="email"
+          placeholder="Введите e-mail"
+          id="modal-email"
+          required>
+          <span class="email-hint hint">Забавный у вас адрес</span>
+        </div>
+        </div>
+        <div class="field-group-details">
+          <div class="details-wrapper">
+          <label for="modal-products">Что нужно привезти</label>
+          <input class="modal-products" type="text" id="modal-products" name="modal-products" placeholder="В свободной форме">
+      </div>
+      <div class="quantity-wrapper">
+        <div><label for="product-qty">Количество:</label>
+          <div class="popover-modal">
+            <span class="triangle">
+              <svg
+              class="triangle-icon"
+              aria-hidden="true"
+              focusable="false"
+              width="14" height="6" viewBox="0 0 14 6" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M14 6H0l7-6 7 6Z" fill="#000"/></svg>
+            </span>
+            <p class="popover-modal-content">Постараемся найти, сколько нужно. Привезём сколько получится по требованиям 
+            к провозу багажа.</p>
+          </div>
+        <div class="buttons-wrapper">
+          <button class="remove-product">
+            <svg
+              class="remove-icon"
+              aria-hidden="true"
+              focusable="false"
+              width="16" height="2" viewBox="0 0 16 2" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16 0H0v2h16V0Z" fill="#000"/></svg>
+        </button>
+          <input class="modal-quantity" type="number" id="product-qty" name="quantity" min="1" max="100" step="1">
+          <button class="add-product">
+            <svg
+              class="add-icon"
+              aria-hidden="true"
+              focusable="false"
+              width="16" height="17" viewBox="0 0 16 17" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M16 7.39H9v-7H7v7H0v2h7v7h2v-7h7v-2Z"/></svg>
+          </button>
+        </div>
+        </div>
+      </div>
+        </div>
+        <div class="field-group-submit"><button class="send-button" type="submit"><span class="send-text">Отправить</span></button>
+        </div>
+      </form>
+        </section>
+      </div>
+    </div>
   </body>
 </html>
