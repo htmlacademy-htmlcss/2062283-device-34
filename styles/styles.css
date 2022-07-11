@@ -160,6 +160,7 @@ body {
 }
 
 .popover-modal-content {
+  display: none;
   position: absolute;
   box-sizing: border-box;
   margin: 0;
@@ -1319,6 +1320,20 @@ input[class="modal-quantity"] {
   line-height: 20px;
   box-sizing: border-box;
 }
+
+input[class="modal-quantity"]::-webkit-outer-spin-button,
+input[class="modal-quantity"]::-webkit-inner-spin-button {
+  -webkit-appearance: none
+}
+
+input[class="modal-quantity"],
+input[class="modal-quantity"]:hover,
+input[class="modal-quantity"]:focus-visible {
+    appearance: none;
+    -moz-appearance: textfield;
+}
+
+
 
 .send-button {
   position: relative;
