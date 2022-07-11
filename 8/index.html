@@ -117,20 +117,38 @@
                   Корзина</a
                 >
                 <div class="popover popover-cart">
+                  <span class="triangle-cart">
+                    <svg
+                      class="triangle-icon-cart"
+                      aria-hidden="true"
+                      focusable="false"
+                      width="14"
+                      height="6"
+                      viewBox="0 0 14 6"
+                      fill="currentColor"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M14 6H0l7-6 7 6Z" fill="#000" />
+                    </svg>
+                  </span>
                   <div class="popopver-content">
                     <ul class="cart-item-list">
                       <li class="cart-item">
-                        <span class="сart-item-icon">
-                          <img
-                            class="car-item-image"
-                            src="images/selfie-amat.png"
-                            width="39"
-                            height="43"
-                            alt="Изображение профессиональной селфи-палки."
-                          />
-                        </span>
-                        <p class="cart-item-title">Любительская селфи-палка</p>
-                        <button class="cart-close">
+                        <a class="cart-item-link" href="#">
+                          <span class="сart-item-icon-first">
+                            <img
+                              class="cart-item-image"
+                              src="../images/selfie-amat.png"
+                              width="39"
+                              height="43"
+                              alt="Изображение профессиональной селфи-палки."
+                            />
+                          </span>
+                          <p class="cart-item-title">
+                            Любительская селфи-палка
+                          </p>
+                        </a>
+                        <button class="cart-close-first">
                           <svg
                             class="cart-close-icon"
                             aria-hidden="true"
@@ -149,19 +167,21 @@
                         </button>
                       </li>
                       <li class="cart-item">
-                        <span class="cart-item-icon">
-                          <img
-                            class="car-item-image"
-                            src="images/selfie-prof.png"
-                            width="39"
-                            height="43"
-                            alt="Изображение профессиональной селфи-палки."
-                          />
-                        </span>
-                        <p class="cart-item-title">
-                          Профессиональная селфи-палка
-                        </p>
-                        <button class="cart-close">
+                        <a class="cart-item-link" href="#">
+                          <span class="cart-item-icon-second">
+                            <img
+                              class="cart-item-image"
+                              src="images/selfie-prof.png"
+                              width="39"
+                              height="43"
+                              alt="Изображение профессиональной селфи-палки."
+                            />
+                          </span>
+                          <p class="cart-item-title">
+                            Профессиональная селфи-палка
+                          </p>
+                        </a>
+                        <button class="cart-close-second">
                           <svg
                             class="cart-close-icon"
                             aria-hidden="true"
@@ -427,18 +447,10 @@
                           focusable="false"
                           width="12"
                           height="12"
-                          viewBox="0 0 12 12"
                           fill="none"
                           xmlns="http://www.w3.org/2000/svg"
                         >
-                          <circle
-                            cx="6"
-                            cy="6"
-                            r="5"
-                            fill="#000"
-                            stroke="#000"
-                            stroke-width="2"
-                          />
+                          <circle cx="10.5" cy="11.4" r="10.5" fill="#fff" />
                         </svg>
                         <span class="visually-hidden">1 описание.</span>
                       </button>
@@ -451,10 +463,18 @@
                           focusable="false"
                           width="12"
                           height="12"
+                          viewBox="0 0 12 12"
                           fill="none"
                           xmlns="http://www.w3.org/2000/svg"
                         >
-                          <circle cx="10.5" cy="11.4" r="10.5" fill="#fff" />
+                          <circle
+                            cx="6"
+                            cy="6"
+                            r="5"
+                            fill="#000"
+                            stroke="#000"
+                            stroke-width="2"
+                          />
                         </svg>
                         <span class="visually-hidden">2 описание.</span>
                       </button>
@@ -548,18 +568,10 @@
                           focusable="false"
                           width="12"
                           height="12"
-                          viewBox="0 0 12 12"
                           fill="none"
                           xmlns="http://www.w3.org/2000/svg"
                         >
-                          <circle
-                            cx="6"
-                            cy="6"
-                            r="5"
-                            fill="#000"
-                            stroke="#000"
-                            stroke-width="2"
-                          />
+                          <circle cx="10.5" cy="11.4" r="10.5" fill="#fff" />
                         </svg>
                         <span class="visually-hidden">1 описание.</span>
                       </button>
@@ -588,10 +600,18 @@
                           focusable="false"
                           width="12"
                           height="12"
+                          viewBox="0 0 12 12"
                           fill="none"
                           xmlns="http://www.w3.org/2000/svg"
                         >
-                          <circle cx="10.5" cy="11.4" r="10.5" fill="#fff" />
+                          <circle
+                            cx="6"
+                            cy="6"
+                            r="5"
+                            fill="#000"
+                            stroke="#000"
+                            stroke-width="2"
+                          />
                         </svg>
                         <span class="visually-hidden">3 описание.</span>
                       </button>
@@ -603,17 +623,17 @@
                 </button>
               </div>
               <ul class="spec-list">
-                <li class="spec-item-range">
+                <li class="spec-item-length">
                   <span class="spec-range">8,5 м</span>
                   <span class="range-name">Длина палки</span>
                 </li>
-                <li class="spec-item-range">
-                  <span class="spec-range">5 кг</span>
-                  <span class="range-name">Вес палки</span>
+                <li class="spec-item-weight">
+                  <span class="spec-radius">5 кг</span>
+                  <span class="radius-name">Вес палки</span>
                 </li>
-                <li class="spec-item-range">
-                  <span class="spec-range">Карбон</span>
-                  <span class="range-name">Материал</span>
+                <li class="spec-item-radius">
+                  <span class="spec-radius">Карбон</span>
+                  <span class="radius-name">Материал</span>
                 </li>
               </ul>
             </div>
@@ -1050,5 +1070,144 @@
         </section>
       </div>
     </footer>
+    <div class="modal-container">
+      <div class="modal modal-delivery">
+        <section class="modal-title-section">
+          <h2 class="modal-title">Доставка под заказ</h2>
+          <button class="modal-close">
+            <svg
+              class="modal-close-icon"
+              aria-hidden="true"
+              focusable="false"
+              width="26"
+              height="26"
+              viewBox="0 0 26 26"
+              fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M26 2.36 23.64 0 13 10.64 2.36 0 0 2.36 10.64 13 0 23.64 2.36 26 13 15.36 23.64 26 26 23.64 15.36 13 26 2.36Z"
+              />
+            </svg>
+            <span class="visually-hidden">Закрыть окно</span>
+          </button>
+        </section>
+        <section class="modal-content">
+          <h2 class="visually hidden">Модальное окно доставки</h2>
+          <form
+            class="submit-form"
+            action="https://echo.htmlacademy.ru/"
+            method="post"
+          >
+            <div class="field-group-auth">
+              <div class="auth-wrapper">
+                <label for="auth-login">Ваше имя</label>
+                <input
+                  class="auth-form-field"
+                  type="text"
+                  id="auth-login"
+                  name="auth-login"
+                  placeholder="Введите имя"
+                />
+                <span class="login-hint hint">Добавьте имя</span>
+              </div>
+              <div class="email-wrapper">
+                <label for="modal-email">Ваш email</label>
+                <input
+                  class="modal-email"
+                  type="email"
+                  name="email"
+                  placeholder="Введите e-mail"
+                  id="modal-email"
+                  required
+                />
+                <span class="email-hint hint">Забавный у вас адрес</span>
+              </div>
+            </div>
+            <div class="field-group-details">
+              <div class="details-wrapper">
+                <label for="modal-products">Что нужно привезти</label>
+                <input
+                  class="modal-products"
+                  type="text"
+                  id="modal-products"
+                  name="modal-products"
+                  placeholder="В свободной форме"
+                />
+              </div>
+              <div class="quantity-wrapper">
+                <div>
+                  <label for="product-qty">Количество:</label>
+                  <div class="popover-modal">
+                    <span class="triangle">
+                      <svg
+                        class="triangle-icon"
+                        aria-hidden="true"
+                        focusable="false"
+                        width="14"
+                        height="6"
+                        viewBox="0 0 14 6"
+                        fill="currentColor"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path d="M14 6H0l7-6 7 6Z" fill="#000" />
+                      </svg>
+                    </span>
+                    <p class="popover-modal-content">
+                      Постараемся найти, сколько нужно. Привезём сколько
+                      получится по требованиям к провозу багажа.
+                    </p>
+                  </div>
+                  <div class="buttons-wrapper">
+                    <button class="remove-product">
+                      <svg
+                        class="remove-icon"
+                        aria-hidden="true"
+                        focusable="false"
+                        width="16"
+                        height="2"
+                        viewBox="0 0 16 2"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path d="M16 0H0v2h16V0Z" fill="#000" />
+                      </svg>
+                    </button>
+                    <input
+                      class="modal-quantity"
+                      type="number"
+                      id="product-qty"
+                      name="quantity"
+                      min="1"
+                      max="100"
+                      step="1"
+                    />
+                    <button class="add-product">
+                      <svg
+                        class="add-icon"
+                        aria-hidden="true"
+                        focusable="false"
+                        width="16"
+                        height="17"
+                        viewBox="0 0 16 17"
+                        fill="currentColor"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path d="M16 7.39H9v-7H7v7H0v2h7v7h2v-7h7v-2Z" />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="field-group-submit">
+              <button class="send-button" type="submit">
+                <span class="send-text">Отправить</span>
+              </button>
+            </div>
+          </form>
+        </section>
+      </div>
+    </div>
   </body>
 </html>
