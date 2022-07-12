@@ -50,6 +50,7 @@ body {
   height: 36px;
   margin-bottom: 0;
   padding: 0;
+  transition: ease-out 50ms;
 }
 
 .page-header-logo:hover {
@@ -149,8 +150,8 @@ body {
 
 .triangle-icon {
   position: absolute;
-  top: 332px;
-  left: 790px;
+  top: 33px;
+  left: 122px;
   width: 0;
   height: 0;
   border-left: 9px solid transparent;
@@ -164,8 +165,8 @@ body {
   position: absolute;
   box-sizing: border-box;
   margin: 0;
-  top: 340px;
-  right: 80px;
+  top: 41px;
+  right: -30px;
   z-index: 5;
   width: 200px;
   min-height: 160px;
@@ -196,6 +197,7 @@ body {
   color: #ffffff;
   text-decoration: none;
   cursor: pointer;
+  transition: ease-out 50ms;
 }
 
 .сart-item-icon-first {
@@ -315,6 +317,7 @@ body {
   background-color: #ffffff;
   border: none;
   cursor: pointer;
+  transition: ease-out 300ms;
 }
 
 .cart-item-open:hover {
@@ -835,6 +838,10 @@ body {
   padding-bottom: 62px;
 }
 
+.footer-logo {
+  transition: ease-out 50ms;
+}
+
 .footer-logo:hover {
   opacity: 0.6;
 }
@@ -943,6 +950,7 @@ body {
   bottom: 0;
   left: 0;
   z-index: 1;
+  transition: ease-out 50ms;
 }
 
 .social-link:hover::after {
@@ -1014,13 +1022,12 @@ body {
 .modal {
   position: relative;
   margin: auto;
-  padding: 52px 80px 72px;
+  padding: 52px 70px 72px;
   background-color: rgba(255, 255, 255, 1);
 }
 
 .modal-delivery {
   width: 760px;
-  height: 414px;
   border: 10px solid rgba(0, 0, 0, 1);
   box-shadow: 0 10px 0 0 rgba(0, 0, 0, 0.1);
 }
@@ -1029,7 +1036,6 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  grid-column: 1 / 5;
 }
 
 .modal-title {
@@ -1100,11 +1106,16 @@ input[name="modal-products"] {
   display: flex;
   margin-top: 42px;
   align-items: flex-start;
+  justify-content: space-between;
+}
+
+.quantity-container {
+  display: flex;
+  margin-left: 40px;
 }
 
 .quantity-wrapper {
-  display: flex;
-  margin-left: 40px;
+  position: relative;
 }
 
 .buttons-wrapper {
@@ -1112,11 +1123,11 @@ input[name="modal-products"] {
   display: flex;
   height: 60px;
   margin-top: 5px;
+  justify-content: space-between;
   align-items: center;
   background-color: #f0f0f0;
-  width: 140px;
-  padding-left: 22px;
-  padding-right: 22px;
+  max-width: 300px;
+  width: 100%;
 }
 
 .remove-product {
@@ -1124,14 +1135,20 @@ input[name="modal-products"] {
   border: none;
   outline: none;
   left: 22px;
-  top: 17px;
+  top: 20px;
   padding: 0;
+  z-index: 500;
 }
 
 .add-product {
   border: none;
   outline: none;
   padding: 0;
+  width: 16px;
+  height: 17px;
+  position: absolute;
+  left: 117px;
+  bottom: 21px
 }
 
 input[class="auth-form-field"] {
@@ -1291,7 +1308,7 @@ label[for="product-qty"] {
   height: 30px;
   background-image: url(../images/notice-yellow.png);
   background-repeat: no-repeat;
-  background-position: center right;
+  background-position: center right 10px;
   align-items: center;
 }
 
@@ -1306,19 +1323,23 @@ label[for="product-qty"] {
 }
 
 input[class="modal-quantity"] {
+  position: absolute;
+  display: flex;
   border: none;
   outline: none;
   background-color: #f0f0f0;
   padding: 0;
-  margin-left: 60px;
-  margin-right: auto;
-  width: 23px;
+  justify-content: center;
+  max-width: 153px;
+  padding-left: 73px;
+  width: 100%;
   font-family: 'Rubik';
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   box-sizing: border-box;
+  min-height: 60px;
 }
 
 input[class="modal-quantity"]::-webkit-outer-spin-button,
@@ -1356,6 +1377,7 @@ input[class="modal-quantity"]:focus-visible {
   background-color: #ffffff;
   border: none;
   cursor: pointer;
+  transition: ease-in-out 50ms ;
 }
 
 .send-button::after {
@@ -1378,6 +1400,7 @@ input[class="modal-quantity"]:focus-visible {
 
 .send-button:hover {
   background-color: #ffe17f;
+
 }
 
 .send-button:focus-visible {
@@ -1464,6 +1487,7 @@ input::-webkit-input-placeholder {
   z-index: 1;
   min-height: 40px;
   cursor: pointer;
+ 
 }
 
 .search-button::after {
@@ -1479,6 +1503,7 @@ input::-webkit-input-placeholder {
   border-radius: 0 20px 20px 0;
   z-index: 1;
   min-height: 40px;
+  transition: ease-out 300ms;
 }
 
 .search-button:hover::after {
@@ -1721,6 +1746,7 @@ input::-webkit-input-placeholder {
   padding-left: 25px;
   padding-right: 25px;
   cursor: pointer;
+  transition: ease-out 50ms;
 }
 
 .pagination-prev:hover {
@@ -1744,6 +1770,7 @@ input::-webkit-input-placeholder {
   padding-left: 25px;
   padding-right: 25px;
   cursor: pointer;
+  transition: ease-out 50ms;
 }
 
 .pagination-next:hover {
@@ -1783,6 +1810,7 @@ input::-webkit-input-placeholder {
   background-color: #ffe17f;
   z-index: 1;
   display: none;
+  transition: ease-out 300ms;
 }
 
 .product-card-link:hover::after {
@@ -1949,7 +1977,8 @@ input::-webkit-input-placeholder {
 }
 
 .newsletter-wrapper {
-  padding: 64px 133px 56px 147px;
+  display: flex;
+  justify-content: center;
 }
 
 .newsletter-title {
@@ -2024,6 +2053,7 @@ input::-webkit-input-placeholder {
   cursor: pointer;
   padding: 0;
   margin: 0;
+  transition: ease-out 50ms;
 }
 
 .subscribe-button:hover {
@@ -2409,6 +2439,7 @@ input::-webkit-input-placeholder {
   background-color: #ffffff;
   border: none;
   cursor: pointer;
+  transition: ease-in-out 50ms;
 }
 
 .button-more:hover {
@@ -2465,6 +2496,7 @@ input::-webkit-input-placeholder {
 .services-item-link {
   text-decoration: none;
   color: #f0f0f0;
+  transition: ease-out 50ms;
 }
 
 .services-item-link:hover {
@@ -2651,6 +2683,7 @@ input::-webkit-input-placeholder {
   padding-bottom: 15px;
   margin-top: 44px;
   cursor: pointer;
+  transition: ease-out 50ms;
 }
 
 .pagination-show-more:hover {
@@ -3122,6 +3155,7 @@ li.spec-item-radius {
   padding: 9px 17px 11px 25px;
   border: none;
   cursor: pointer;
+  transition: ease-in-out 50ms;
 }
 
 .button-warranty::after {
@@ -3182,6 +3216,7 @@ li.spec-item-radius {
   padding: 9px 35px 11px;
   border: none;
   cursor: pointer;
+  transition: ease-in-out 50ms;
 }
 
 .credit-text {
