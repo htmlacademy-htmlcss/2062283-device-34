@@ -4,10 +4,11 @@
     <meta charset="utf-8" />
     <title>HTML Academy: Девайс</title>
     <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   </head>
   <body>
-    <header class="container">
-      <div class="catalog-header-wrapper">
+    <header class="header">
+      <div class="catalog-header-wrapper container">
         <h1 class="visually-hidden">Девайс.</h1>
         <nav class="navigation-container">
           <a class="page-header-logo" href="index.html">
@@ -19,7 +20,7 @@
             />
           </a>
           <h2 class="visually-hidden">Пользовательская навигация.</h2>
-          <div class="nav-wrapper-user">
+          <div class="nav-wrapper-user-catalog">
             <ul class="navigation-user">
               <li class="navigation-item-search">
                 <form
@@ -32,16 +33,17 @@
                     type="search"
                     name="text"
                     id="search-field"
-                    placeholder="Поиск по сайту"
+                    placeholder="Текст поиска"
+                    required
                   />
-                  <label for="search-field" class="search-label"></label
+                  <label for="search-field" class="search-label"><span class="visually-hidden">Поиск</span></label
                   ><button class="search-button" value="Найти">
                     <span class="button-text">Найти</span>
                   </button>
                 </form>
               </li>
               <li class="navigation-item-login">
-                <a class="button login-button" href="#">
+                <a class="button catalog-login-button" href="#">
                   <svg
                     class="login-icon"
                     aria-hidden="true"
@@ -117,15 +119,14 @@
                   Корзина</a
                 >
                 <div class="popover popover-cart">
-                  <span class="triangle-cart"></span>
                   <div class="popopver-content">
                     <ul class="cart-item-list">
                       <li class="cart-item">
-                        <a class="cart-item-link" href="#">
+                        <a class="cart-item-link-first" href="#">
                           <span class="сart-item-icon-first">
                             <img
                               class="cart-item-image"
-                              src="../images/selfie-amat.png"
+                              src="images/selfie-amat.png"
                               width="39"
                               height="43"
                               alt="Изображение профессиональной селфи-палки."
@@ -135,7 +136,7 @@
                             Любительская селфи-палка
                           </p>
                         </a>
-                        <button class="cart-close-first">
+                        <button class="cart-close-first" type="button">
                           <svg
                             class="cart-close-icon"
                             aria-hidden="true"
@@ -154,7 +155,7 @@
                         </button>
                       </li>
                       <li class="cart-item">
-                        <a class="cart-item-link" href="#">
+                        <a class="cart-item-link-second" href="#">
                           <span class="cart-item-icon-second">
                             <img
                               class="cart-item-image"
@@ -168,7 +169,7 @@
                             Профессиональная селфи-палка
                           </p>
                         </a>
-                        <button class="cart-close-second">
+                        <button class="cart-close-second" type="button">
                           <svg
                             class="cart-close-icon"
                             aria-hidden="true"
@@ -191,7 +192,7 @@
                         <span class="total-price">Сумма: 2000 ₽</span>
                       </li>
                       <li class="cart-item-open">
-                        <a class="cart-open"
+                        <button class="cart-open button" type="button"
                           ><span class="open-text">Открыть корзину</span></a
                         >
                       </li>
@@ -247,7 +248,9 @@
       </div>
     </header>
     <main class="main-inner">
-      <header class="container inner-header">
+      <header class="inner-header">
+        <div class="container">
+          <div class="inner-header-container">
         <h1 class="inner-header-title">Моноподы для селфи</h1>
         <ul class="breadcrumbs">
           <li class="breadcrumbs-item">
@@ -296,6 +299,8 @@
             >
           </li>
         </ul>
+      </div>
+        </div>
       </header>
       <section class="catalog-products">
         <div class="catalog-wrapper container">
@@ -331,7 +336,7 @@
               <legend class="catalog-filter-title">Цвет</legend>
               <ul class="catalog-filter-list">
                 <li class="catalog-filter-item">
-                  <label class="control">
+                  <label class="control"><span class="visually-hidden">Цвет</span>
                     <input
                       class="visually-hidden control-input"
                       type="checkbox"
@@ -343,7 +348,7 @@
                   </label>
                 </li>
                 <li class="catalog-filter-item">
-                  <label class="control">
+                  <label class="control"><span class="visually-hidden">Цвет</span>
                     <input
                       class="visually-hidden control-input"
                       type="checkbox"
@@ -355,7 +360,7 @@
                   </label>
                 </li>
                 <li class="catalog-filter-item">
-                  <label class="control">
+                  <label class="control"><span class="visually-hidden">Цвет</span>
                     <input
                       class="visually-hidden control-input"
                       type="checkbox"
@@ -366,7 +371,7 @@
                   </label>
                 </li>
                 <li class="catalog-filter-item">
-                  <label class="control">
+                  <label class="control"><span class="visually-hidden">Цвет</span>
                     <input
                       class="visually-hidden control-input"
                       type="checkbox"
@@ -377,7 +382,7 @@
                   </label>
                 </li>
                 <li class="catalog-filter-item">
-                  <label class="control">
+                  <label class="control"><span class="visually-hidden">Цвет</span>
                     <input
                       class="visually-hidden control-input"
                       type="checkbox"
@@ -393,31 +398,31 @@
               <legend class="catalog-filter-title">Bluetooth</legend>
               <ul class="catalog-filter-list">
                 <li class="catalog-filter-item">
-                  <label class="control">
-                  <input
-                    class="visually-hidden control-input"
-                    type="radio"
-                    name="product-group"
-                    value="bluetooth"
-                    checked
-                  />
-                
-                  <span class="control-mark-bt"></span>
-                  <span class="control-label">Есть</span>
-                </label>
+                  <label class="control"><span class="visually-hidden">BT</span>
+                    <input
+                      class="visually-hidden control-input"
+                      type="radio"
+                      name="product-group"
+                      value="bluetooth"
+                      checked
+                    />
+
+                    <span class="control-mark-bt"></span>
+                    <span class="control-label">Есть</span>
+                  </label>
                 </li>
                 <li class="catalog-filter-item">
-                  <label class="control">
-                  <input
-                    class="visually-hidden control-input"
-                    type="radio"
-                    name="product-group"
-                    value="bluetooth"
-                    checked
-                  />
-                  <span class="control-mark-bt"></span>
-                  <span class="control-label">Нет</span>
-                </label>
+                  <label class="control"><span class="visually-hidden">BT</span>
+                    <input
+                      class="visually-hidden control-input"
+                      type="radio"
+                      name="product-group"
+                      value="bluetooth"
+                      checked
+                    />
+                    <span class="control-mark-bt"></span>
+                    <span class="control-label">Нет</span>
+                  </label>
                 </li>
               </ul>
             </fieldset>
@@ -467,9 +472,9 @@
                       fill="currentColor"
                     />
                   </svg>
+                  <span class="visually-hidden">Сортировка по убыванию</span>
                 </button>
               </div>
-              <span class="visually-hidden">Сортировка по убыванию</span>
             </div>
             <div class="products-catalog-wrapper">
               <ul class="products-list">
@@ -495,7 +500,7 @@
                   <a class="product-card-link" href="#">
                     <img
                       class="product-card-image"
-                      src="images/catalog-2.jpg"
+                      src="images/catalog-3.jpg"
                       width="360"
                       height="380"
                       alt="Изображение профессиональной селфи-палки"
@@ -514,7 +519,7 @@
                   <a class="product-card-link" href="#">
                     <img
                       class="product-card-image"
-                      src="images/catalog-3.jpg"
+                      src="images/catalog-4.jpg"
                       width="360"
                       height="380"
                       alt="Изображение непотопляемой селфи-палки."
@@ -532,7 +537,7 @@
                   <a class="product-card-link" href="#">
                     <img
                       class="product-card-image"
-                      src="images/catalog-4.jpg"
+                      src="images/catalog-2.jpg"
                       width="360"
                       height="380"
                       alt="Изображение селфи-палки следуй за мной"
@@ -547,12 +552,10 @@
                   </a>
                 </li>
               </ul>
-              <div class="container">
-                <button class="button pagination-show-more" type="button">
-                  Загрузить еще
-                </button>
-              </div>
-              <div class="pagination-cat-wrapper container">
+              <button class="button pagination-show-more" type="button">
+                Загрузить еще
+              </button>
+              <div class="pagination-cat-wrapper">
                 <ul class="pagination">
                   <li class="pagination-text-prev">
                     <a

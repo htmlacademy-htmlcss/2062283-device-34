@@ -4,10 +4,11 @@
     <meta charset="utf-8" />
     <title>HTML Academy: Девайс</title>
     <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   </head>
   <body>
-    <header class="container">
-      <div class="header-wrapper">
+    <header class="header">
+      <div class="header-wrapper container">
         <h1 class="visually-hidden">Девайс.</h1>
         <nav class="navigation-container">
           <a class="page-header-logo" href="index.html">
@@ -33,9 +34,10 @@
                     name="text"
                     id="search-field"
                     placeholder="Текст поиска"
+                    required
                   />
-                  <label for="search-field" class="search-label"></label
-                  ><button class="search-button" value="Найти">
+                  <label for="search-field" class="search-label"><span class="visually-hidden">Поиск</span></label
+                  ><button class="search-button" value="Найти" type="button">
                     <span class="button-text">Найти</span>
                   </button>
                 </form>
@@ -116,11 +118,10 @@
                   Корзина</a
                 >
                 <div class="popover popover-cart">
-                  <span class="triangle-cart"></span>
                   <div class="popopver-content">
                     <ul class="cart-item-list">
                       <li class="cart-item">
-                        <a class="cart-item-link" href="#">
+                        <a class="cart-item-link-first" href="#">
                           <span class="сart-item-icon-first">
                             <img
                               class="cart-item-image"
@@ -134,7 +135,7 @@
                             Любительская селфи-палка
                           </p>
                         </a>
-                        <button class="cart-close-first">
+                        <button class="cart-close-first" type="button">
                           <svg
                             class="cart-close-icon"
                             aria-hidden="true"
@@ -153,7 +154,7 @@
                         </button>
                       </li>
                       <li class="cart-item">
-                        <a class="cart-item-link" href="#">
+                        <a class="cart-item-link-second" href="#">
                           <span class="cart-item-icon-second">
                             <img
                               class="cart-item-image"
@@ -167,7 +168,7 @@
                             Профессиональная селфи-палка
                           </p>
                         </a>
-                        <button class="cart-close-second">
+                        <button class="cart-close-second" type="button">
                           <svg
                             class="cart-close-icon"
                             aria-hidden="true"
@@ -190,7 +191,7 @@
                         <span class="total-price">Сумма: 2000 ₽</span>
                       </li>
                       <li class="cart-item-open">
-                        <a class="cart-open"
+                        <button class="cart-open button" type="button"
                           ><span class="open-text">Открыть корзину</span></a
                         >
                       </li>
@@ -202,7 +203,7 @@
           </div>
           <div class="nav-main-wrapper">
             <div class="dropdown-wrapper">
-              <button class="button catalog-button">
+              <button class="button catalog-button" type="button">
                 Каталог товаров
                 <svg
                   class="catalog-icon"
@@ -222,12 +223,18 @@
                 <span class="visually-hidden">Кнопка раскрытия каталога.</span>
               </button>
               <ul class="dropdown-list">
-                <li class="dropdown-item-vr">Виртуальная реальность</li>
-                <li class="dropdown-item-selfie">Моноподы для селфи</li>
-                <li class="dropdown-item-cam">Экшн камеры</li>
-                <li class="dropdown-item-fit">Фитнес браслеты</li>
-                <li class="dropdown-item-watch">Умные часы</li>
-                <li class="dropdown-item-copter">Квадрокоптеры</li>
+                <li class="dropdown-item-vr">
+                  <a class="vr-link dropdown link" href="catalog.html">Виртуальная реальность</a></li>
+                <li class="dropdown-item-selfie">
+                  <a class="selfie-link dropdown link" href="catalog.html">Моноподы для селфи</a></li>
+                <li class="dropdown-item-cam">
+                  <a class="cam-link dropdown link" href="catalog.html">Экшн-камеры</a></li>
+                <li class="dropdown-item-fit">
+                  <a class="fit-link dropdown link" href="catalog.html">Фитнес-браслеты</a></li>
+                <li class="dropdown-item-watch">
+                  <a class="watch-link dropdown link" href="catalog.html">Умные часы</a></li>
+                <li class="dropdown-item-copter">
+                  <a class="copter-link dropdown link" href="catalog.html">Квадрокоптеры</a></li>
               </ul>
             </div>
             <ul class="nav-menu">
@@ -247,24 +254,40 @@
     </header>
     <main class="main-index">
       <section class="best-product-container container">
+        <div class="best-product-navigation">
+          <a class="button slider-button slider-prev" href="#">
+            <svg
+              class="slider-prev-icon"
+              aria-hidden="true"
+              focusable="false"
+              width="20"
+              height="60"
+              fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path d="M20 60h-3L0 30 17 0h3L4 30l16 30Z" fill="#000" />
+            </svg>
+            <span class="visually-hidden">Предыдущий товар.</span>
+          </a>
+          <a class="button slider-button slider-next" href="#">
+            <svg
+              class="slider-next-icon"
+              aria-hidden="true"
+              focusable="false"
+              width="20"
+              height="60"
+              fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path d="M0 0h3l17 30L4 60H0l16-30L0 0Z" fill="#000" />
+            </svg>
+            <span class="visually-hidden">Следующий товар.</span>
+          </a>
+        </div>
         <ul class="slider-page-list">
           <li class="slider-page-one">
             <div class="slider-container">
               <span class="slider-decoration-text">01</span>
-              <a class="button slider-button slider-prev" href="#">
-                <svg
-                  class="slider-prev-icon"
-                  aria-hidden="true"
-                  focusable="false"
-                  width="20"
-                  height="60"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path d="M20 60h-3L0 30 17 0h3L4 30l16 30Z" fill="#000" />
-                </svg>
-                <span class="visually-hidden">Предыдущий товар.</span>
-              </a>
               <h2 class="visually-hidden">Изображение квадрокоптера.</h2>
               <img
                 class="slider-image"
@@ -273,20 +296,6 @@
                 height="560"
                 alt="Квадрокоптер"
               />
-              <a class="button slider-button slider-next" href="#">
-                <svg
-                  class="slider-next-icon"
-                  aria-hidden="true"
-                  focusable="false"
-                  width="20"
-                  height="60"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path d="M0 0h3l17 30L4 60H0l16-30L0 0Z" fill="#000" />
-                </svg>
-                <span class="visually-hidden">Следующий товар.</span>
-              </a>
             </div>
             <div class="advantage-container">
               <h2 class="title advantage-title">
@@ -300,7 +309,7 @@
                 <div class="pagination-wrapper">
                   <ul class="slider-pagination">
                     <li class="slider-pagination-item">
-                      <button class="button slider-pagination-button-current">
+                      <button class="button slider-pagination-button-current" type="button">
                         <svg
                           class="slider-current-icon"
                           aria-hidden="true"
@@ -324,7 +333,7 @@
                       </button>
                     </li>
                     <li class="slider-pagination-item">
-                      <button class="button slider-pagination-button">
+                      <button class="button slider-pagination-button" type="button">
                         <svg
                           class="slider-current-icon"
                           aria-hidden="true"
@@ -341,7 +350,7 @@
                       </button>
                     </li>
                     <li class="slider-pagination-item">
-                      <button class="button slider-pagination-button">
+                      <button class="button slider-pagination-button" type="button">
                         <svg
                           class="slider-current-icon"
                           aria-hidden="true"
@@ -359,7 +368,7 @@
                     </li>
                   </ul>
                 </div>
-                <button class="button button-more">
+                <button class="button button-more" type="button">
                   <span class="more-text">Подробнее</span>
                 </button>
               </div>
@@ -378,20 +387,6 @@
           <li class="slider-page-two">
             <div class="slider-container">
               <span class="slider-decoration-text">02</span>
-              <a class="button slider-button slider-prev" href="#">
-                <svg
-                  class="slider-prev-icon"
-                  aria-hidden="true"
-                  focusable="false"
-                  width="20"
-                  height="60"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path d="M20 60h-3L0 30 17 0h3L4 30l16 30Z" fill="#000" />
-                </svg>
-                <span class="visually-hidden">Предыдущий товар.</span>
-              </a>
               <h2 class="visually-hidden">Изображение смарт часов.</h2>
               <img
                 class="slider-image"
@@ -400,20 +395,6 @@
                 height="560"
                 alt="Смарт часы"
               />
-              <a class="button slider-button slider-next" href="#">
-                <svg
-                  class="slider-next-icon"
-                  aria-hidden="true"
-                  focusable="false"
-                  width="20"
-                  height="60"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path d="M0 0h3l17 30L4 60H0l16-30L0 0Z" fill="#000" />
-                </svg>
-                <span class="visually-hidden">Следующий товар.</span>
-              </a>
             </div>
             <div class="advantage-container">
               <h2 class="title advantage-title">
@@ -428,7 +409,7 @@
                 <div class="pagination-wrapper">
                   <ul class="slider-pagination">
                     <li class="slider-pagination-item">
-                      <button class="button slider-pagination-button-current">
+                      <button class="button slider-pagination-button-current" type="button">
                         <svg
                           class="slider-current-icon"
                           aria-hidden="true"
@@ -444,7 +425,7 @@
                       </button>
                     </li>
                     <li class="slider-pagination-item">
-                      <button class="button slider-pagination-button">
+                      <button class="button slider-pagination-button" type="button">
                         <svg
                           class="slider-current-icon"
                           aria-hidden="true"
@@ -468,7 +449,7 @@
                       </button>
                     </li>
                     <li class="slider-pagination-item">
-                      <button class="button slider-pagination-button">
+                      <button class="button slider-pagination-button" type="button">
                         <svg
                           class="slider-current-icon"
                           aria-hidden="true"
@@ -485,7 +466,7 @@
                     </li>
                   </ul>
                 </div>
-                <button class="button button-more">
+                <button class="button button-more" type="button">
                   <span class="more-text">Подробнее</span>
                 </button>
               </div>
@@ -500,20 +481,6 @@
           <li class="slider-page-three">
             <div class="slider-container">
               <span class="slider-decoration-text">03</span>
-              <a class="button slider-button slider-prev" href="#">
-                <svg
-                  class="slider-prev-icon"
-                  aria-hidden="true"
-                  focusable="false"
-                  width="20"
-                  height="60"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path d="M20 60h-3L0 30 17 0h3L4 30l16 30Z" fill="#000" />
-                </svg>
-                <span class="visually-hidden">Предыдущий товар.</span>
-              </a>
               <h2 class="visually-hidden">Изображение селфи палки.</h2>
               <img
                 class="slider-image"
@@ -522,20 +489,6 @@
                 height="560"
                 alt="Селфи палка"
               />
-              <a class="button slider-button slider-next" href="#">
-                <svg
-                  class="slider-next-icon"
-                  aria-hidden="true"
-                  focusable="false"
-                  width="20"
-                  height="60"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path d="M0 0h3l17 30L4 60H0l16-30L0 0Z" fill="#000" />
-                </svg>
-                <span class="visually-hidden">Следующий товар.</span>
-              </a>
             </div>
             <div class="advantage-container">
               <h2 class="title advantage-title">
@@ -549,7 +502,7 @@
                 <div class="pagination-wrapper">
                   <ul class="slider-pagination">
                     <li class="slider-pagination-item">
-                      <button class="button slider-pagination-button-current">
+                      <button class="button slider-pagination-button-current" type="button">
                         <svg
                           class="slider-current-icon"
                           aria-hidden="true"
@@ -565,7 +518,7 @@
                       </button>
                     </li>
                     <li class="slider-pagination-item">
-                      <button class="button slider-pagination-button">
+                      <button class="button slider-pagination-button" type="button">
                         <svg
                           class="slider-current-icon"
                           aria-hidden="true"
@@ -581,7 +534,7 @@
                       </button>
                     </li>
                     <li class="slider-pagination-item">
-                      <button class="button slider-pagination-button">
+                      <button class="button slider-pagination-button" type="button">
                         <svg
                           class="slider-current-icon"
                           aria-hidden="true"
@@ -606,7 +559,7 @@
                     </li>
                   </ul>
                 </div>
-                <button class="button button-more">
+                <button class="button button-more" type="button">
                   <span class="more-text">Подробнее</span>
                 </button>
               </div>
@@ -673,7 +626,8 @@
                     fill="#363636"
                   />
                 </svg>
-                Моноподы <br> для селфи
+                Моноподы <br />
+                для селфи
               </a>
             </li>
             <li class="product-item">
@@ -777,23 +731,25 @@
           <div class="services-list-wrapper">
             <ul class="services-list">
               <li class="services-item">
-                <button class="button button-delivery">
+                <button class="button button-delivery" type="button">
                   <span class="delivery-text">Доставка</span>
                 </button>
               </li>
               <li class="services-item">
-                <button class="button button-warranty">
+                <button class="button button-warranty" type="button">
                   <span class="warranty-text">Гарантия</span>
                 </button>
               </li>
               <li class="services-item">
-                <button class="button button-credit">
+                <button class="button button-credit" type="button">
                   <span class="credit-text">Кредит</span>
                 </button>
               </li>
             </ul>
           </div>
-          <div class="services-description-wrapper">
+          <ul class="services-description-list">
+            <li class="services-description-delivery">
+          <div class="delivery-description-wrapper">
             <h2 class="title delivery-title" id="delivery">Доставка</h2>
             <p class="description-content">
               Мы с удовольствием доставим ваш товар прямо<br />
@@ -801,10 +757,32 @@
               мы неплохо заработаем, поднимая его на ваш этаж.
             </p>
           </div>
+        </li>
+        <li class="services-description-warranty">
+          <div class="warranty-description-wrapper">
+            <h2 class="title delivery-title" id="delivery">Гарантия</h2>
+            <p class="description-content">
+              Если из-за возгорания купленного у нас товара у вас<br>
+              сгорит дом — не переживайте, мы выдадим вам новый.<br>
+              Товар, не дом, конечно же.
+            </p>
+          </div>
+        </li>
+         <li class="services-description-credit">
+          <div class="credit-description-wrapper">
+            <h2 class="title delivery-title" id="delivery">Кредит</h2>
+            <p class="description-content">
+              Залезть в долговую яму стало проще! Кредитные консультанты <br>
+              подберут для вас наиболее выгодные <br>
+              условия кредита. Выгодные для банка, разумеется.
+            </p>
+          </div>
+        </li>
+        </ul>
         </div>
       </section>
       <div class="delivery-notice container">
-        <button class="button delivery-notice-link">
+        <button class="button delivery-notice-link" type="button">
           <svg
             class="delivery-car-icon"
             width="47"
@@ -868,7 +846,7 @@
             <li class="about-delivery-description-item"><b>СДИК</b></li>
             <li class="about-delivery-description-item"><b>ТоксБерри</b></li>
           </ul>
-          <button class="more-about">
+          <button class="more-about" type="button">
             <span class="about-text">Подробнее о нас</span>
           </button>
         </div>
@@ -884,13 +862,13 @@
           </address>
           <a class="contacts-phone" href="tel:+78128121212"
             >Тел.:+7 (812) 812-12-12</a
-          ><br />
+          >
           <b class="contacts-subtitle">Время работы</b>
           <ul class="contacts-schedule">
             <li class="schedule-item">пн—пт: с 10:00 до 22:00</li>
             <li class="schedule-item">сб—вс: с 10:00 до 19:00</li>
           </ul>
-          <button class="button contact-us">
+          <button class="button contact-us" type="button">
             <span class="contact-text">Напишите нам</span>
           </button>
         </div>
@@ -904,7 +882,7 @@
             </h2>
             <p class="newsletter-description">
               Еженедельный дайджест с обзорами новинок,<br />
-              длительными тест-драйвами, распаковками, а также акции, <br>
+              длительными тест-драйвами, распаковками, а также акции, <br />
               спецпредложения и вот это вот всё.
             </p>
           </div>
@@ -920,7 +898,7 @@
                 name="email"
                 placeholder="Ваш e-mail"
                 required
-              /><button class="button subscribe-button">
+              /><button class="button subscribe-button" type="button">
                 <span class="subscribe-text">Подписаться</span>
               </button>
             </form>
@@ -945,9 +923,8 @@
           <div class="footer-menu-wrapper container">
             <h3 class="visually-hidden">Адрес.</h3>
             <address class="contacts-footer">
-              <p class="contacts-address-text">
-                Санкт-Петербург, набережная реки Карповки, <br> 5, литера П.
-              </p>
+                Санкт-Петербург, набережная реки Карповки, 
+                5, литера П.
             </address>
             <h3 class="visually-hidden">Услуги.</h3>
             <ul class="footer-services-list">
@@ -1038,7 +1015,7 @@
               </li>
             </ul>
             <div class="academy-logo-wrapper">
-              <a class="academy-logo-link" href="https://htmlacademy.ru/">
+              <a class="academy-logo-link" href="https://htmlacademy.ru/"> <span class="visually-hidden">Логотип академии</span>
                 <svg
                   class="academy-icon"
                   aria-hidden="true"
@@ -1062,7 +1039,7 @@
       <div class="modal modal-delivery">
         <section class="modal-title-section">
           <h2 class="modal-title">Доставка под заказ</h2>
-          <button class="modal-close">
+          <button class="modal-close" type="button">
             <svg
               class="modal-close-icon"
               aria-hidden="true"
@@ -1089,18 +1066,19 @@
           >
             <div class="field-group-auth">
               <div class="auth-wrapper">
-                <label for="auth-login">Ваше имя</label>
+                <label for="auth-login">Ваше имя:</label>
                 <input
                   class="auth-form-field"
                   type="text"
                   id="auth-login"
                   name="auth-login"
                   placeholder="Введите имя"
+                  required
                 />
                 <span class="login-hint hint">Добавьте имя</span>
               </div>
               <div class="email-wrapper">
-                <label for="modal-email">Ваш email</label>
+                <label for="modal-email">Ваш e-mail:</label>
                 <input
                   class="modal-email"
                   type="email"
@@ -1114,34 +1092,21 @@
             </div>
             <div class="field-group-details">
               <div class="details-wrapper">
-                <label for="modal-products">Что нужно привезти</label>
+                <label for="modal-products">Что нужно привезти:</label>
                 <input
                   class="modal-products"
                   type="text"
                   id="modal-products"
                   name="modal-products"
                   placeholder="В свободной форме"
+                  required
                 />
               </div>
               <div class="quantity-container">
                 <div class="quantity-wrapper">
                   <label for="product-qty">Количество:</label>
                   <div class="popover-modal">
-                    <span class="triangle">
-                      <svg
-                        class="triangle-icon"
-                        aria-hidden="true"
-                        focusable="false"
-                        width="14"
-                        height="6"
-                        viewBox="0 0 14 6"
-                        fill="currentColor"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path d="M14 6H0l7-6 7 6Z" fill="#000" />
-                      </svg>
-                    </span>
-                    <p class="popover-modal-content">
+                  <p class="popover-modal-content">
                       Постараемся найти, сколько нужно. Привезём сколько
                       получится по требованиям к провозу багажа.
                     </p>
