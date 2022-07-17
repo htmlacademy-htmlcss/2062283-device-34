@@ -360,8 +360,6 @@ body {
   margin: 0 auto 0 23px;
 }
 
-
-
 .compare-cart-index {
   list-style: none;
   padding: 0;
@@ -2147,8 +2145,8 @@ input::-webkit-input-placeholder {
   line-height: 21px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  width: 253px;
-  height: 55px;
+  max-width: 253px;
+  min-height: 55px;
   border: 3px solid rgba(196, 196, 196, 1);
   cursor: pointer;
   padding: 0;
@@ -2840,6 +2838,7 @@ input::-webkit-input-placeholder {
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
+  color: #444444;
 }
 
 h2.title {
@@ -2867,6 +2866,7 @@ ul.spec-list {
   font-weight: 400;
   font-size: 36px;
   line-height: 30px;
+  color: #444444s;
 }
 
 .range-name {
@@ -2889,6 +2889,7 @@ ul.spec-list {
 
 li.spec-item-range {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   align-items: flex-start;
 }
@@ -2896,6 +2897,7 @@ li.spec-item-range {
 li.spec-item-radius {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   margin-left: 20px;
 }
 
@@ -2903,6 +2905,7 @@ li.spec-item-radius {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  flex-wrap: wrap;
 }
 
 .spec-item-weight {
@@ -2916,6 +2919,7 @@ li.spec-item-radius {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  flex-wrap: wrap;
   margin-left: 40px;
 }
 
@@ -3004,6 +3008,7 @@ li.spec-item-radius {
   margin: -9px auto 0;
   padding: 0;
   display: flex;
+  flex-wrap: wrap;
   max-width: 508px;
   width: 100%;
   list-style: none;
@@ -3342,6 +3347,7 @@ li.spec-item-radius {
   font-size: 16px;
   line-height: 19px;
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   margin-top: 16px;
