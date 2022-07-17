@@ -2146,12 +2146,14 @@ input::-webkit-input-placeholder {
   letter-spacing: 0.2em;
   text-transform: uppercase;
   max-width: 253px;
+  width: auto;
   min-height: 55px;
   border: 3px solid rgba(196, 196, 196, 1);
   cursor: pointer;
   padding: 0;
   margin: 0;
   transition: ease-out 50ms;
+  overflow: auto;
 }
 
 .subscribe-button:hover {
