@@ -13,7 +13,7 @@
   </head>
   <body>
     <header class="container">
-      <div class="header-wrapper">
+      <div class="catalog-header-wrapper container">
         <h1 class="visually-hidden">Девайс.</h1>
         <nav class="navigation-container">
           <a class="page-header-logo" href="index.html">
@@ -25,7 +25,7 @@
             />
           </a>
           <h2 class="visually-hidden">Пользовательская навигация.</h2>
-          <div class="nav-wrapper-user">
+          <div class="nav-wrapper-user-catalog">
             <ul class="navigation-user">
               <li class="navigation-item-search">
                 <form
@@ -33,23 +33,23 @@
                   action="https://echo.htmlacademy.ru/"
                   method="get"
                 >
-                  <div class="search-label">
-                    <input
-                      class="search-field"
-                      type="search"
-                      name="text"
-                      id="search-field"
-                      placeholder="Поиск по сайту"
-                      required
-                    />
-                    <button type="submit" class="search-button" value="Найти">
-                      <span class="button-text">Найти</span>
-                    </button>
-                  </div>
+                  <input
+                    class="search-field"
+                    type="search"
+                    name="text"
+                    id="search-field"
+                    placeholder="Текст поиска"
+                    required
+                  />
+                  <label for="search-field" class="search-label"
+                    ><span class="visually-hidden">Поиск</span></label
+                  ><button class="search-button" value="Найти">
+                    <span class="button-text">Найти</span>
+                  </button>
                 </form>
               </li>
               <li class="navigation-item-login">
-                <a class="button login-button" href="#">
+                <a class="button catalog-login-button" href="#">
                   <svg
                     class="login-icon"
                     aria-hidden="true"
@@ -64,11 +64,12 @@
                       fill="#000"
                     />
                   </svg>
-                  Войти
+                  Коля Петухов
                 </a>
+                <a class="button log-out-button">Выйти</a>
               </li>
             </ul>
-            <ul class="compare-cart-index">
+            <ul class="compare-cart">
               <li class="navigation-item">
                 <a class="link compare" href="#">
                   <svg
@@ -508,9 +509,9 @@
                       fill="currentColor"
                     />
                   </svg>
+                  <span class="visually-hidden">Сортировка по убыванию</span>
                 </button>
               </div>
-              <span class="visually-hidden">Сортировка по убыванию</span>
             </div>
             <div class="products-catalog-wrapper">
               <ul class="products-list">
@@ -735,7 +736,8 @@
                 >
               </li>
             </ul>
-            <a class="academy-logo-link" href="https://htmlacademy.ru/">
+            <a class="academy-logo-link" href="https://htmlacademy.ru/"
+              ><span class="visually-hidden">Логотип академии</span>
               <svg
                 class="academy-icon"
                 aria-hidden="true"

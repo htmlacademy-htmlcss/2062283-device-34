@@ -73,7 +73,20 @@ body {
   margin: 0 0 0 26px;
 }
 
+.catalog-login-button {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  margin-left: 24px;
+  margin-bottom: 3px;
+}
+
 .login-button:hover {
+  opacity: 0.6;
+}
+
+.catalog-login-button:hover {
   opacity: 0.6;
 }
 
@@ -81,7 +94,16 @@ body {
   outline: 2px solid #af4fff;
 }
 
+.catalog-login-button:focus-visible {
+  outline: 2px solid #af4fff;
+}
+
 .login-button:active {
+  opacity: 0.3;
+  outline: none;
+}
+
+.catalog-login-button:active {
   opacity: 0.3;
   outline: none;
 }
@@ -133,6 +155,7 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
+  z-index: 800;
 }
 
 .popover-cart.hidden {
@@ -408,14 +431,10 @@ body {
 
 .catalog-header-wrapper {
   background-color: #ffe17f;
-  margin-top: 40px;
+  margin-top: 43px;
   min-height: 186px;
   padding-left: 60px;
   padding-right: 60px;
-}
-
-.catalog-header-wrapper .nav-wrapper-user {
-  margin-top: 7px;
 }
 
 .slider-decoration-text {
@@ -433,11 +452,6 @@ body {
   z-index: 1;
 }
 
-.header-wrapper-catalog {
-  background-color: #ffe17f;
-  margin-top: 50px;
-  min-height: 186px;
-}
 
 .menu-wrapper {
   display: flex;
@@ -449,6 +463,12 @@ body {
   display: flex;
   margin-top: 10px;
   align-items: center;
+}
+
+.nav-wrapper-user-catalog {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
 }
 
 .nav-main-wrapper {
@@ -514,6 +534,10 @@ body {
   justify-content: space-between;
 }
 
+.best-product-navigation {
+  position: relative;
+}
+
 .slider-page-list .slider-page-one {
   display: flex;
 }
@@ -549,14 +573,14 @@ body {
 
 .slider-prev {
   position: absolute;
-  right: 510px;
-  bottom: 289px;
+  right: -50px;
+  bottom: 60px;
 }
 
 .slider-next {
   position: absolute;
   left: 540px;
-  bottom: 289px;
+  bottom: 60px;
 }
 
 .slider-button:hover {
@@ -887,7 +911,7 @@ body {
 
 .footer-wrapper {
   position: relative;
-  padding: 62px 60px 58px;
+  padding: 62px 0 58px;
   background-color: #444444;
 }
 
@@ -1745,7 +1769,7 @@ input::-webkit-input-placeholder {
 }
 
 .dropdown-list {
-  display: grid;
+  display: none;
   grid-template-columns: 222px 182px 211px;
   justify-self: start;
   left: -60px;
@@ -2146,11 +2170,11 @@ input::-webkit-input-placeholder {
   letter-spacing: 0.2em;
   text-transform: uppercase;
   max-width: 253px;
-  width: auto;
+  width: 100%;
   min-height: 55px;
   border: 3px solid rgba(196, 196, 196, 1);
   cursor: pointer;
-  padding: 0;
+  padding: 15px 36px;
   margin: 0;
   transition: ease-out 50ms;
   overflow: auto;
@@ -2211,7 +2235,7 @@ input::-webkit-input-placeholder {
   text-decoration-line: underline;
   display: flex;
   margin-right: 2px;
-  margin-top: 3px;
+  margin-bottom: 10px;
 }
 
 .contacts-phone-footer:hover {
@@ -2878,6 +2902,7 @@ ul.spec-list {
   font-size: 16px;
   line-height: 30px;
   margin-top: 12px;
+  color: #444444;
 }
 
 .radius-name {
@@ -2887,6 +2912,7 @@ ul.spec-list {
   font-size: 16px;
   line-height: 30px;
   margin-top: 12px;
+  color: #444444;
 }
 
 li.spec-item-range {
@@ -2953,7 +2979,7 @@ li.spec-item-radius {
   line-height: 20px;
   text-align: center;
   color: #444444;
-  margin-left: auto;
+  margin-left: 159px;
 }
 
 .pagination-item-two {
@@ -2975,7 +3001,7 @@ li.spec-item-radius {
   line-height: 20px;
   text-align: center;
   color: #444444;
-  margin-left: 32px;
+  margin-left: 30px;
 }
 
 .pagination-item-dots {
@@ -2995,7 +3021,7 @@ li.spec-item-radius {
   font-size: 16px;
   line-height: 20px;
   text-align: center;
-  margin-left: 32px;
+  margin-left: 23px;
   margin-right: auto;
 }
 
