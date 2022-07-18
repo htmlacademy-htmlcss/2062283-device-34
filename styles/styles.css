@@ -150,7 +150,7 @@ body {
   width: 320px;
   background-color: rgba(0, 0, 0, 1);
   color: rgba(255, 255, 255, 1);
-  font-family: "Rubik";
+  font-family: "Rubik", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -211,7 +211,7 @@ body {
 .popover-modal-content {
   color: rgba(255, 255, 255, 1);
   margin: 0;
-  font-family: "Rubik";
+  font-family: "Rubik", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -431,7 +431,7 @@ body {
 
 .catalog-header-wrapper {
   background-color: #ffe17f;
-  margin-top: 43px;
+  margin-top: 40px;
   min-height: 186px;
   padding-left: 60px;
   padding-right: 60px;
@@ -1119,7 +1119,7 @@ body {
 
 .modal-title {
   margin: 0;
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 50px;
@@ -1262,7 +1262,7 @@ input[class="auth-form-field"] {
   border: 2px solid rgba(240, 240, 240, 1);
   outline: none;
   margin-top: 14px;
-  font-family: "Rubik";
+  font-family: "Rubik", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -1353,7 +1353,7 @@ input[class="modal-products"]:disabled {
   border: 2px solid rgba(240, 240, 240, 1);
   outline: none;
   margin-top: 14px;
-  font-family: "Rubik";
+  font-family: "Rubik", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -1369,7 +1369,7 @@ input[class="modal-products"]:disabled {
   border: none;
   outline: none;
   margin-top: 14px;
-  font-family: "Rubik";
+  font-family: "Rubik", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -1383,7 +1383,7 @@ input[class="modal-products"]:disabled {
 label[for="auth-login"],
 label[for="modal-email"],
 label[for="modal-products"] {
-  font-family: "Rubik";
+  font-family: "Rubik", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -1394,7 +1394,7 @@ label[for="modal-products"] {
 label[for="product-qty"] {
   position: relative;
   display: flex;
-  font-family: "Rubik";
+  font-family: "Rubik", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -1420,7 +1420,7 @@ label[for="product-qty"]::after {
 }
 
 .hint {
-  font-family: "Rubik";
+  font-family: "Rubik", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -1433,7 +1433,7 @@ input[class="modal-quantity"] {
   background-color: #f0f0f0;
   padding: 0;
   width: 100%;
-  font-family: "Rubik";
+  font-family: "Rubik", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
